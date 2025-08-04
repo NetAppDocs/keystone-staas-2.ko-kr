@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: concepts/infra.html 
+keywords: keystone infrastructure, infra 
+summary: Keystone 인프라, 설계, 기술 선택 및 구성 요소 제품은 NetApp 에 전적으로 있습니다. 
+---
+= Keystone 인프라
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone 의 인프라, 설계, 기술 선택 및 구성 요소에 대한 전적인 책임을 지며, 이는 NetApp 과 고객 운영 환경 모두에 적용됩니다.
+
+NetApp 다음 조치를 취할 권리를 보유합니다.
+
+* 제품을 선택, 대체 또는 재활용하세요.
+* 적절하다고 판단되면 새로운 기술로 제품을 새롭게 합니다.
+* 서비스 요구 사항을 충족시키기 위해 제품의 용량을 늘리거나 줄입니다.
+* 서비스 요구 사항을 충족하기 위해 아키텍처, 기술 및/또는 제품을 수정합니다.
+
+
+Keystone 인프라에는 다음을 포함한 여러 구성 요소가 포함됩니다.
+
+* NetApp 스토리지 시스템을 포함한 Keystone 인프라.
+* ITOM 모니터링 솔루션, BlueXP, Active IQ, Active IQ Unified Manager 와 같은 서비스를 관리하고 운영하는 도구입니다.
+
+
+
+
+== 저장 플랫폼
+
+기업용 애플리케이션에는 빠른 프로비저닝 워크플로우를 지원하고, 지속적인 가용성을 유지하고, 낮은 지연 시간으로 높은 작업 부하를 견뎌내고, 더 높은 성능을 제공하고, 주요 클라우드 공급업체와의 통합을 지원하는 스토리지 플랫폼이 필요합니다.  NetApp 이러한 요구 사항을 지원하는 여러 가지 제품과 기술을 보유하고 있습니다.  Keystone 서비스의 경우 NetApp AFF, ASA, FAS 및 StorageGRID 시스템을 사용합니다.
+
+
+
+== 모니터링 도구
+
+Keystone 고객 운영 서비스에서는 스토리지 인프라와 모니터링 도구가 고객 사이트에 설치됩니다.  저장 인프라는 최초 주문을 지원하는 데 필요한 저장 하드웨어로 구성되며, 나중에 추가 저장을 주문할 수 있는 조항도 포함되어 있습니다.
+
+저장 장비 외에도 저장 및 소비 모니터링을 위해 두 개의 모니터링 도구가 제공됩니다.
+
+* Keystone IT Operations Management(ITOM) 모니터링 솔루션: Keystone 환경을 모니터링하는 데 사용되는 클라우드 기반 SaaS 애플리케이션입니다.  NetApp 스토리지 플랫폼과 통합되어 환경 데이터를 수집하고 Keystone 인프라의 컴퓨팅, 네트워크 및 스토리지 구성 요소를 모니터링합니다.  이러한 모니터링 기능은 온프레미스 설정, 데이터 센터, 클라우드 환경 또는 이러한 환경의 조합으로 확장됩니다.  이 서비스는 클라우드 포털과 통신하는 귀하의 사이트에 설치된 로컬 ITOM 수집기를 사용하여 활성화됩니다.
+* Keystone 데이터 수집기: Keystone 데이터 수집기는 데이터를 수집하여 추가 처리를 위해 Keystone 청구 플랫폼에 제공합니다.  이 애플리케이션은 Active IQ Unified Manager 와 함께 제공됩니다.  5분 간격으로 ONTAP 및 StorageGRID 컨트롤러로부터 데이터를 수집합니다.  데이터가 처리되고, 메타데이터는 AutoSupport 메커니즘을 통해 중앙 집중식 Active IQ 데이터 레이크로 전송됩니다. 이 메커니즘은 청구 데이터 생성에 사용됩니다.  Active IQ 데이터 레이크는 청구 데이터를 처리하여 청구를 위해 Zuora로 전송합니다.
+
+
+image:data-collector-flow.png["수집기 데이터 흐름"]
+
+BlueXP 또는 Digital Advisor 통해 Keystone 구독에 대한 구독 및 소비 세부 정보를 볼 수 있습니다.  Keystone 보고에 대해 자세히 알아보려면 다음을 참조하세요.link:../integrations/dashboard-overview.html["Keystone 대시보드 개요"] .

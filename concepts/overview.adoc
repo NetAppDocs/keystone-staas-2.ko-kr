@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: concepts/overview.html 
+keywords: learn about keystone, keystone introduction, keystone, STaaS, service, offering, overview 
+summary: Keystone 은 선불 CapEx나 리스보다 OpEx 소비 모델을 선호하는 기업을 위한 성장에 따른 지불 방식의 구독 기반 서비스 모델입니다. 
+---
+= NetApp Keystone 에 대해 알아보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone 은 선불 자본 지출이나 데이터 저장 및 보호 요구 사항을 충족하기 위한 임대보다 운영 비용 소비 모델을 선호하는 기업을 위해 원활한 하이브리드 클라우드 환경을 제공하는 종량제 구독 기반 서비스 모델입니다.
+
+Keystone 사용하면 다음과 같은 혜택을 누릴 수 있습니다.
+
+* *비용 효율성*: 필요한 저장 용량에 대해서만 비용을 지불하고 추가 용량을 유연하게 처리할 수 있습니다.
+* *자본 효율성*: 사전 투자 없이 엔터프라이즈급 스토리지에 액세스하세요.
+* *확장성*: 비즈니스가 성장함에 따라 저장 용량을 쉽게 확장할 수 있습니다.
+* *맞춤형*: 필요에 따라 저장 용량 계획을 조정하고 클라우드로 전환하여 전체 비용을 최적화하세요.
+* *클라우드 통합*: 온프레미스 서비스와 클라우드 서비스를 하나의 구독으로 결합합니다.
+* *보안*: 고급 보안 조치와 위협으로부터의 보장된 복구로 귀하의 데이터를 보호하세요.
+
+
+image:keystone-benefit-1.png["Keystone 혜택"]
+
+Keystone 파일, 블록 및 개체 스토리지 유형에 대해 사전 정의된 성능 서비스 수준에서 스토리지 용량을 제공합니다.  이 스토리지는 온프레미스에 구축하여 NetApp, 파트너 또는 고객이 운영할 수 있습니다.  Keystone 선택한 하이퍼스케일 환경에 배포할 수 있는 Cloud Volumes ONTAP 등의 NetApp 클라우드 서비스와 함께 사용할 수 있습니다.
+
+
+
+== Keystone 스토리지 서비스(STaaS)
+
+STaaS(Storage-as-a-Service) 서비스는 스토리지 인프라의 조달, 배포 및 관리를 위한 퍼블릭 클라우드와 유사한 모델을 제공하는 것을 목표로 합니다.  많은 기업이 여전히 하이브리드 클라우드 전략을 수립하는 데 어려움을 겪고 있는 가운데, Keystone STaaS는 온프레미스 서비스로 시작하여 적절한 시기에 클라우드로 전환할 수 있는 유연성을 제공합니다.  이를 통해 다양한 배포 모델에 걸쳐 약속을 보호하고 월별 청구서를 늘리지 않고도 필요에 따라 지출을 재분배할 수 있습니다.
+
+*관련 정보*
+
+* link:../concepts/pricing.html["Keystone 가격"]
+* link:../concepts/add-on.html["Keystone STaaS의 추가 서비스"]
+* link:../concepts/service-levels.html["Keystone 의 성능 서비스 수준"]
+* link:../concepts/infra.html["Keystone 인프라"]
+* link:../concepts/operational-models.html["Keystone 의 운영 모델"]
+

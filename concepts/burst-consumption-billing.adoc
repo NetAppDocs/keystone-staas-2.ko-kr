@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: concepts/burst-consumption-billing.html 
+keywords: burst consumption billing 
+summary: Keystone STaaS 요금은 구독에 약정된 용량 외에 사용자가 소비하는 용량인 버스트 용량을 기준으로 청구됩니다. 
+---
+= 버스트 소비량에 따른 청구
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS 청구는 구독에 약정된 용량 외에 사용자가 소비하는 용량인 _버스트 용량_을 기준으로 합니다.
+
+버스트 한도는 Keystone 계약서에 따라 결정되고 명시됩니다.  이는 약속된 용량보다 20% 높습니다.
+
+약정 용량은 구독을 구매할 때 귀하에게 약속된 용량입니다.  약정 용량과 버스트 용량은 성능 서비스 수준별로 측정됩니다.  소비 용량은 워크로드가 실제로 사용하는 용량입니다.
+
+소비된 용량이 성능 서비스 수준에 대해 약속된 용량보다 큰 경우, 버스트 소비량이 기록되고 그에 따라 요금이 부과됩니다.  일반적으로 약정 용량보다 20% 더 높습니다.  버스트 용량을 초과하는 사용량은 "버스트 한도 초과"로 표시됩니다.
+
+이 프로세스는 생성된 각 소비 기록에 대해 발생합니다.  따라서 폭발적인 소비는 약속한 용량 외에 과도하게 소비한 용량의 양과 기간을 모두 반영합니다.  자세한 내용은 다음을 참조하세요.link:../integrations/consumption-tab.html["Keystone 구독의 소비 추세를 확인하세요"] .
+
+Keystone 에서 지원되는 다양한 용량에 대한 정보는 다음을 참조하세요.link:../concepts/supported-storage-capacity.html["Keystone 에서 지원되는 저장 용량"] .

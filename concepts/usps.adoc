@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: concepts/usps.html 
+keywords: netapp, keystone, US citizen support, USPS, Keystone Success Manager, USPS support 
+summary: 미국 보호 지원은 미국 영토 내에서 미국 시민이 지속적으로 Keystone 서비스를 제공하고 지원하는 추가 서비스입니다. 
+---
+= USPS에 대해 알아보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+미국 보호 지원(USPS)은 NetApp Keystone 구독에 대한 추가 서비스입니다.  이 자격을 취득하면 미국 영토 내에서 미국 시민으로부터 지속적인 Keystone 서비스의 제공 및 지원을 받을 수 있습니다.
+
+다음 섹션을 읽고 귀하의 구독 요소 중 어떤 부분이 이 추가 서비스에 의해 구속되고 NetApp Keystone 계약의 약관에 따라 제공되는지 알아보세요.각주:면책 조항1[여기에 설명된 서비스와 제공 사항은 완전히 이행된 Keystone 계약의 적용을 받으며, 이에 의해 제한되고 관리됩니다.]
+
+
+
+== NetApp USPS 모니터링
+
+NetApp USPS Keystone 지원팀은 고객의 제품 및 구독 서비스의 상태를 모니터링하고, 원격 지원을 제공하며, Keystone Success Manager와 협력합니다.  해당 Keystone 구독 주문과 관련된 제품을 모니터링하는 모든 직원은 미국 영토에서 사업을 운영하는 미국 시민입니다.
+
+
+
+== Keystone 성공 관리자
+
+Keystone Success Manager(KSM)는 미국 시민이며 미국 영토에서 활동하고 있습니다.  이들의 책임은 NetApp Keystone 계약에 명시되어 있습니다.
+
+
+
+== 배포 활동
+
+가능한 경우, 현장 및 원격 배치 및 설치 활동은 미국 영토 내에서 미국 시민에 의해 수행됩니다. 각주: 면책 조항[현장 활동에 적합한 인력의 가용성은 Keystone 시스템이 배치되는 지리적 위치에 따라 달라집니다.]
+
+
+
+== 지원하다
+
+가능한 경우, 필요한 현장 문제 해결 및 지원 활동은 미국 시민이 미국 영토에서 수행합니다. 각주:면책 조항[]

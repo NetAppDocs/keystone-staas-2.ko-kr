@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: concepts/supported-storage-services.html 
+keywords: storage, service, service definition, keystone STaaS services, 
+summary: Keystone STaaS 서비스는 ONTAP 및 StorageGRID 지원합니다. 
+---
+= Keystone 에서 지원되는 스토리지
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS 서비스는 ONTAP 통한 파일 및 블록 스토리지, StorageGRID 통한 객체 스토리지, Cloud Volumes ONTAP 지원합니다.
+
+Keystone STaaS는 귀하의 스토리지에 대한 표준 및 선택 서비스를 제공합니다.
+
+* Keystone STaaS 표준 서비스*: 표준 서비스는 기본 구독에 포함되며 별도로 요금이 청구되지 않습니다.
+
+* Keystone STaaS 추가 서비스*: 이는 표준 Keystone STaaS 구독 서비스에 더해 추가 유틸리티와 혜택을 제공하는 선택적이고 유료 서비스입니다.
+
+Keystone STaaS 서비스를 동시에 이용하실 수 있습니다.  예를 들어, 클라우드 스토리지 구독은 파일, 블록, 개체 스토리지 구독과 동일한 기간을 가질 수 있습니다.  클라우드 서비스는 기존 스토리지 구독의 서비스 기간 중 언제든지 포함될 수 있습니다.  하지만 기존 파일, 블록 및 개체 구독을 갱신할 계획이 없다면 구독 기간의 마지막 90일 동안은 클라우드 스토리지 구독을 추가할 수 없습니다.
+
+
+
+== 파일, 블록 및 개체 스토리지 서비스
+
+ONTAP 파일 및 블록 스토리지와 StorageGRID 객체 스토리지를 위한 Keystone STaaS 서비스는 여러 기능과 프로토콜을 지원하며, 자세한 내용은 다음 표에 설명되어 있습니다.
+
+|===
+| 스토리지 | 플랫폼 | 프로토콜 | 지원되는 기능 
+
+
+ a| 
+파일 저장
+ a| 
+ONTAP
+ a| 
+NFS와 CIFS
+ a| 
+지원되는 ONTAP 기능:
+
+* FlexVol
+* FlexGroup
+* 스냅샷 사본
+* SnapMirror (비동기)
+* SnapVault
+* SnapLock Enterprise
+* FabricPool/클라우드 계층화
+* SnapRestore
+* FlexClone
+* SnapCenter (라이선스는 포함되어 있지만 Keystone 서비스의 일부가 아니며 관리가 보장되지 않음)
+* 자율적인 랜섬웨어 보호^1^
+
+
+
+
+ a| 
+블록 스토리지
+ a| 
+ONTAP
+ a| 
+FC 및 iSCSI
+ a| 
+지원되는 ONTAP 기능:
+
+* FlexVol
+* FlexGroup
+* 스냅샷 사본
+* SnapMirror (비동기)
+* SnapVault
+* SnapLock Enterprise
+* FabricPool/클라우드 계층화
+* SnapRestore
+* FlexClone
+* SnapCenter (라이선스는 포함되어 있지만 Keystone 서비스의 일부가 아니며 관리가 보장되지 않음)
+
+
+
+
+ a| 
+객체 스토리지
+ a| 
+StorageGRID
+ a| 
+S3
+ a| 
+여러 사이트에서 여러 정보 수명 주기 관리(ILM) 정책을 지원합니다.
+
+|===
+
+NOTE: ^1^ ONTAP 의 랜섬웨어 보호에 대한 정보는 다음을 참조하세요. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["자율형 랜섬웨어 보호"^] .  ^2^ 각 사이트에는 별도의 구독이 필요합니다.
+
+
+
+== 클라우드 스토리지 서비스
+
+Keystone STaaS는 클라우드 스토리지 서비스를 제공합니다.  Keystone STaaS는 Amazon Web Services(AWS), Microsoft Azure, Google Cloud Platform에서 Cloud Volumes ONTAP 데이터 관리 기능을 지원합니다.
+
+
+NOTE: Cloud Volumes ONTAP 에 필요한 하이퍼스칼라 기반 컴퓨팅, 스토리지 및 네트워크 서비스는 NetApp 에서 Keystone STaaS 구독의 일부로 제공되지 않습니다. 이러한 구독은 하이퍼스칼라 클라우드 서비스 제공업체로부터 직접 조달해야 합니다.

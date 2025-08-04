@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-issues.html 
+keywords: netapp, keystone, release notes, known issues 
+summary: 알려진 문제는 Keystone 구독 서비스를 효과적으로 사용하는 데 방해가 될 수 있는 문제를 나타냅니다. 
+---
+= Keystone STaaS의 알려진 문제
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+알려진 문제는 Keystone 구독 서비스를 효과적으로 사용하는 데 방해가 될 수 있는 문제를 나타냅니다.
+
+NetApp Keystone STaaS에서 보고된 알려진 문제는 다음과 같습니다.
+
+[cols="3*"]
+|===
+| 알려진 문제 | 설명 | 해결 방법 
+
+
+ a| 
+데이터 불일치로 인해 잘못된 송장이 발행되었습니다.
+ a| 
+AutoSupport 구독에 대한 소비 데이터의 불일치로 인해 잘못된 송장이 생성되어 청구가 부정확해지는 문제가 발생합니다.
+ a| 
+None
+
+
+
+ a| 
+잘못된 QoS 정책 유형 표시
+ a| 
+*볼륨 세부 정보* 탭에서 *QoS 정책 유형* 열은 QoS 정책이 적용되지 않은 경우 _QoS_를 표시하고, 준수 열은 _설정되지 않음_을 표시하여 표시되는 QoS 정책 상태에 불일치가 발생합니다.
+ a| 
+None
+
+
+
+ a| 
+기본 및 연결된 구독에 대한 볼륨 세부 정보를 사용할 수 없습니다.
+ a| 
+*볼륨 요약* 탭에는 기본 및 연결된 보조 구독의 총 볼륨 수, QoS 준수 상태, 보호된 볼륨 수, 총 소비 용량이 0으로 표시됩니다.
+ a| 
+None
+
+|===

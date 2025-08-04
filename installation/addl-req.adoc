@@ -1,0 +1,125 @@
+---
+sidebar: sidebar 
+permalink: installation/addl-req.html 
+keywords: keystone unified manager prerequisites, aiqum config keystone 
+summary: Keystone 시작하기 전에 ONTAP 클러스터와 StorageGRID 시스템이 몇 가지 요구 사항을 충족하는지 확인해야 합니다. 
+---
+= ONTAP 및 StorageGRID 에 대한 요구 사항
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone 시작하기 전에 ONTAP 클러스터와 StorageGRID 시스템이 몇 가지 요구 사항을 충족하는지 확인해야 합니다.
+
+[role="tabbed-block"]
+====
+.ONTAP
+--
+.소프트웨어 버전
+. ONTAP 9.8 이상
+. Active IQ Unified Manager (Unified Manager) 9.10 이상
+
+
+.시작하기 전에
+ONTAP 통해서만 사용 데이터를 수집하려는 경우 다음 요구 사항을 충족하세요.
+
+. ONTAP 9.8 이상이 구성되어 있는지 확인하세요.  새 클러스터 구성에 대한 자세한 내용은 다음 링크를 참조하세요.
++
+** https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["System Manager를 사용하여 새 클러스터에 ONTAP 구성"]
+** https://docs.netapp.com/us-en/ontap/software_setup/task_create_the_cluster_on_the_first_node.html["CLI로 클러스터 설정"]
+
+
+. 특정 역할이 있는 ONTAP 로그인 계정을 만듭니다.  자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/ontap/authentication/create-svm-user-accounts-task.html#cluster-and-svm-administrators["ONTAP 로그인 계정 생성에 대해 알아보세요"] .
++
+** *웹 UI*
++
+... 기본 자격 증명을 사용하여 ONTAP 시스템 관리자에 로그인합니다.  자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/ontap/concept_administration_overview.html["System Manager를 사용한 클러스터 관리"] .
+... "읽기 전용" 역할과 "http" 애플리케이션 유형을 가진 ONTAP 사용자를 만들고, *클러스터 > 설정 > 보안 > 사용자*로 이동하여 암호 인증을 활성화합니다.
+
+
+** *클리*
++
+... 기본 자격 증명을 사용하여 ONTAP CLI에 로그인합니다.  자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI를 사용한 클러스터 관리"] .
+... "읽기 전용" 역할과 "http" 애플리케이션 유형을 가진 ONTAP 사용자를 생성하고, 비밀번호 인증을 활성화합니다.  인증에 대해 자세히 알아보려면 다음을 참조하세요. https://docs.netapp.com/us-en/ontap/authentication/enable-password-account-access-task.html["ONTAP 계정 비밀번호 액세스 활성화"] .
+
+
+
+
+
+
+Active IQ Unified Manager 통해 사용 데이터를 수집하려면 다음 요구 사항을 충족해야 합니다.
+
+. Unified Manager 9.10 이상이 구성되어 있는지 확인하세요.  Unified Manager 설치에 대한 자세한 내용은 다음 링크를 참조하세요.
++
+** https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["VMware vSphere 시스템에 Unified Manager 설치"^]
+** https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/concept_requirements_for_install_unified_manager.html["Linux 시스템에 Unified Manager 설치"^]
+
+
+. ONTAP 클러스터가 Unified Manager에 추가되었는지 확인하세요.  클러스터 추가에 대한 정보는 다음을 참조하세요. https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_clusters.html["클러스터 추가"^] .
+. 사용 및 성능 데이터 수집을 위한 특정 역할을 가진 Unified Manager 사용자를 만듭니다.  다음 단계를 수행하세요.  사용자 역할에 대한 정보는 다음을 참조하세요. https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_definitions_of_user_roles.html["사용자 역할의 정의"^] .
++
+.. 설치 중에 생성된 기본 애플리케이션 관리자 사용자 자격 증명을 사용하여 Unified Manager 웹 UI에 로그인합니다.  보다 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["Unified Manager 웹 UI에 액세스하기"^] .
+.. Keystone Collector에 대한 서비스 계정을 만듭니다. `Operator` 사용자 역할.  Keystone Collector 서비스 API는 이 서비스 계정을 사용하여 Unified Manager와 통신하고 사용 데이터를 수집합니다.  보다 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_users.html["사용자 추가"^] .
+.. 생성하다 `Database` 사용자 계정과 함께 `Report Schema` 역할.  이 사용자는 성과 데이터 수집에 필요합니다.  보다 https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_create_database_user.html["데이터베이스 사용자 생성"^] .
++
+
+NOTE: Unified Manager를 새로 설치하는 동안 MySQL의 기본 포트인 3306은 localhost로만 제한되므로 Keystone ONTAP 에 대한 성능 데이터 수집이 차단됩니다.  이 구성은 수정될 수 있으며, 연결을 다른 호스트에 사용할 수 있습니다. `Control access to MySQL port 3306` Unified Manager 유지 관리 콘솔의 옵션입니다.  자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_additional_menu_options.html["추가 메뉴 옵션"^] .
+
+
+
+. Unified Manager에서 API Gateway를 활성화합니다.  Keystone Collector는 API Gateway 기능을 사용하여 ONTAP 클러스터와 통신합니다.  웹 UI에서 API Gateway를 활성화하거나 Unified Manager CLI를 통해 몇 가지 명령을 실행하여 API Gateway를 활성화할 수 있습니다.
++
+.웹 UI
+Unified Manager 웹 UI에서 API Gateway를 활성화하려면 Unified Manager 웹 UI에 로그인하고 API Gateway를 활성화하세요.  자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/active-iq-unified-manager/config/concept_api_gateway.html["API 게이트웨이 활성화"^] .
+
++
+.CLI
+Unified Manager CLI를 통해 API Gateway를 활성화하려면 다음 단계를 따르세요.
+
++
+.. Unified Manager 서버에서 SSH 세션을 시작하고 Unified Manager CLI에 로그인합니다.
+`um cli login -u _<umadmin>_`  CLI 명령에 대한 정보는 다음을 참조하세요. https://docs.netapp.com/us-en/active-iq-unified-manager/events/reference_supported_unified_manager_cli_commands.html["지원되는 Unified Manager CLI 명령"^] .
+.. API Gateway가 이미 활성화되어 있는지 확인하세요.
+`um option list api.gateway.enabled`  에이 `true` 값은 API Gateway가 활성화되었음을 나타냅니다.
+.. 반환된 값이 다음과 같은 경우 `false` , 다음 명령을 실행하세요:
+`um option set api.gateway.enabled=true`
+.. Unified Manager 서버를 다시 시작합니다.
++
+*** 리눅스: https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/task_restart_unified_manager.html["Unified Manager 다시 시작"^] .
+*** VMware vSphere: https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/task_restart_unified_manager_virtual_machine.html["Unified Manager 가상 머신 다시 시작"^] .
+
+
+
+
+
+
+--
+.StorageGRID
+--
+StorageGRID 에 Keystone Collector를 설치하려면 다음 구성이 필요합니다.
+
+* StorageGRID `11.6.0` 또는 나중에 설치해야 합니다.  StorageGRID 업그레이드에 대한 정보는 다음을 참조하세요.link:https://docs.netapp.com/us-en/storagegrid-116/upgrade/index.html["StorageGRID 소프트웨어 업그레이드: 개요"^] .
+* 사용 데이터 수집을 위해 StorageGRID 로컬 관리자 사용자 계정을 만들어야 합니다.  이 서비스 계정은 Keystone Collector 서비스가 관리자 노드 API를 통해 StorageGRID 와 통신하는 데 사용됩니다.
++
+.단계
+.. 그리드 관리자에 로그인합니다.  보다 https://docs.netapp.com/us-en/storagegrid-116/admin/signing-in-to-grid-manager.html["그리드 관리자에 Sign in"^] .
+.. 로컬 관리자 그룹을 만듭니다. `Access mode: Read-only` .  보다 https://docs.netapp.com/us-en/storagegrid-116/admin/managing-admin-groups.html#create-an-admin-group["관리자 그룹 만들기"^] .
+.. 다음 권한을 추가하세요.
++
+*** 세입자 계정
+*** 유지
+*** 메트릭 쿼리
+
+
+.. Keystone 서비스 계정 사용자를 생성하고 이를 관리자 그룹과 연결합니다.  보다 https://docs.netapp.com/us-en/storagegrid-116/admin/managing-users.html["사용자 관리"] .
+
+
+
+
+--
+====

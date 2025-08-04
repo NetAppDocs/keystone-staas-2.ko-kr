@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: integrations/volumes-objects-tab.html 
+keywords: keystone-aiq, digital advisor keystone, volumes-objects-tab, StorageGRID objects details, ONTAP volumes 
+summary: 볼륨 또는 개체 스토리지 수준에서 용량 세부 정보를 확인합니다. 
+---
+= ONTAP 볼륨 및 개체 스토리지에 대한 세부 정보 보기
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+볼륨 또는 개체 스토리지 수준에서 용량 세부 정보를 보려면 Digital Advisor 의 *볼륨 및 개체* 탭으로 이동하세요.  StorageGRID 의 경우 이 탭을 사용하여 개체 스토리지 환경의 개별 노드별 사용량을 읽을 수 있습니다.
+
+이러한 세부 정보를 보려면 BlueXP 의 *자산* 탭을 참조하세요.  특정 Keystone STaaS 구독에 대한 세부 정보를 보려면 다음을 참조하세요.link:../integrations/assets-tab.html["Keystone 구독과 관련된 자산 보기"] .  여러 Keystone 구독에 대한 세부 정보를 보려면 다음을 참조하세요.link:../integrations/assets.html["Keystone 구독 전반에 걸쳐 자산 보기"] .
+
+
+NOTE: 이 탭의 제목은 사이트의 배포 특성에 따라 달라집니다.  ONTAP 과 개체 스토리지가 모두 있는 경우 탭 제목이 *볼륨 및 개체*로 표시됩니다.  ONTAP 의 경우에만 이름이 *Volumes*로 표시됩니다.  StorageGRID 개체 스토리지의 경우 *개체* 탭을 볼 수 있습니다.
+
+
+
+== ONTAP 볼륨 및 개체 스토리지 세부 정보 보기
+
+*볼륨 및 개체* 탭은 ONTAP 시스템 볼륨과 개체 스토리지에 대한 통찰력을 다양한 수준의 세부 정보로 제공합니다.  ONTAP 볼륨의 경우 두 개의 하위 탭이 있습니다. *볼륨 요약*은 구독된 성능 서비스 수준에 매핑된 볼륨의 전체 수를 제공하고, *볼륨 세부 정보*는 이러한 볼륨을 구체적인 정보와 함께 다시 나열합니다.  *객체* 하위 탭은 파일 및 개체 스토리지에 대한 성능 서비스 수준을 포함하는 구독의 개체 스토리지에 대한 세부 정보를 제공합니다.
+
+[role="tabbed-block"]
+====
+.볼륨 요약
+--
+. Digital Advisor 왼쪽 탐색 창에서 *일반 > Keystone 구독 > 볼륨 및 개체 > 볼륨 요약*으로 이동합니다.
+. 구독 번호를 선택하세요.
++
+선택한 Keystone STaaS 구독에 대해 총 볼륨 수, QoS 준수 상태, 보호된 볼륨 수, 모든 볼륨에서 약정된 총 용량, 사용된 총 용량, 사용 가능한 용량을 확인할 수 있습니다.  비준수 볼륨이나 보호 볼륨의 수를 클릭하면 *볼륨 세부 정보* 탭으로 이동합니다. 여기서 선택 사항에 따라 비준수 볼륨이나 보호 볼륨을 보여 주는 필터링된 목록을 볼 수 있습니다.
+
++
+image:volume-summary-2.png["볼륨 요약 탭"]
+
+
+
+--
+.볼륨 세부 정보
+--
+. Digital Advisor 왼쪽 탐색 창에서 *일반 > Keystone 구독 > 볼륨 > 볼륨 세부 정보*로 이동합니다.
+. 구독 번호를 선택하세요.
++
+용량 사용량, 볼륨 유형, 클러스터, 집계 및 할당된 Keystone 성능 서비스 수준과 같은 볼륨의 표 목록을 볼 수 있습니다.  열 제목 옆에 있는 정보 아이콘에 마우스를 올려 놓으면 열을 스크롤하여 해당 열에 대한 자세한 정보를 알아볼 수 있습니다.  열별로 정렬하고 목록을 필터링하여 특정 정보를 볼 수 있습니다.
+
++
+
+NOTE: Keystone 버전 3에서는 QoS 정책이 적용되지 않습니다.
+
++
+*열 숨기기/표시*를 사용하여 표에 표시되는 열을 추가하거나 제거할 수 있습니다.  기본적으로 *부서* 열을 제외한 모든 열이 선택되어 있습니다.  *부서* 열을 포함하여 모든 열을 선택하거나 선택 해제할 수 있으며, 기본 설정은 나중에 사용할 수 있도록 저장됩니다.  CSV 보고서를 다운로드할 때, *부서* 열 세부 정보는 선택한 경우에만 포함되고, 다른 열은 표에서의 선택 상태와 관계없이 표시됩니다.
+
++
+
+NOTE: 고급 데이터 보호 추가 서비스의 경우, MetroCluster 구성에서 볼륨이 기본 볼륨인지 미러 볼륨인지를 나타내는 추가 열이 나타납니다.  *노드 일련번호 복사* 버튼을 클릭하면 개별 노드 일련번호를 복사할 수 있습니다.
+
++
+image:volume-details-3.png["볼륨 세부 정보 탭"]
+
+
+
+--
+.사물
+--
+. Digital Advisor 왼쪽 탐색 창에서 *일반 > Keystone 구독 > 개체*로 이동합니다.
+. 구독 번호를 선택하세요.  기본적으로, 이전에 선택한 구독에 파일 및 개체 스토리지에 대한 성능 서비스 수준이 포함되지 않은 경우 첫 번째로 사용 가능한 구독 번호가 선택됩니다.
++
+
+NOTE: StorageGRID 의 경우 이 탭은 개체 스토리지의 노드에 대한 물리적 사용량을 표시합니다.
+
++
+image:objects-details.png["개체 탭"]
+
+
+
+--
+====
+*관련 정보*
+
+* link:../integrations/dashboard-overview.html["Keystone 대시보드 이해하기"]
+* link:../integrations/subscriptions-tab.html["구독 세부 정보 보기"]
+* link:../integrations/current-usage-tab.html["현재 소비량 세부 정보를 확인하세요"]
+* link:../integrations/consumption-tab.html["소비 추세 보기"]
+* link:../integrations/subscription-timeline.html["구독 일정 보기"]
+* link:../integrations/assets-tab.html["Keystone 구독 자산 보기"]
+* link:../integrations/assets.html["Keystone 구독 전반에 걸쳐 자산 보기"]
+* link:../integrations/performance-tab.html["성과 지표 보기"]
+

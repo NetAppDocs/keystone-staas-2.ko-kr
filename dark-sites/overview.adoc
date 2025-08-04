@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: dark-sites/overview.html 
+keywords: keystone, dark, site, staas, security, deployment, collector, encryption, access 
+summary: 'Keystone 귀사의 비즈니스 및 보안 요구 사항을 충족하기 위해 _개인_ 배포 모드(_다크 사이트_라고도 함)를 제공합니다.' 
+---
+= Keystone (비공개 모드)에 대해 알아보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone 귀사의 비즈니스 및 보안 요구 사항을 충족하기 위해 _개인_ 배포 모드(_다크 사이트_라고도 함)를 제공합니다.  이 모드는 연결 제한이 있는 조직에서 사용할 수 있습니다.
+
+NetApp 인터넷 연결이 제한적이거나 전혀 없는 환경(다크 사이트라고도 함)에 맞춰 Keystone STaaS를 특별히 배포합니다.  이러한 환경은 보안, 규정 준수 또는 운영 요구 사항으로 인해 외부 통신이 제한되는 안전하거나 격리된 환경입니다.
+
+NetApp Keystone 의 경우 다크 사이트에 대한 서비스를 제공한다는 것은 이러한 환경의 제약을 존중하는 방식으로 Keystone 유연 스토리지 구독 서비스를 제공한다는 것을 의미합니다.  여기에는 다음이 포함됩니다.
+
+* *로컬 배포*: Keystone 격리된 환경 내에서 독립적으로 구성할 수 있으므로 설정 액세스를 위한 인터넷 연결이나 외부 인력이 필요 없습니다.
+* *오프라인 작업*: 상태 점검 및 청구 기능을 포함한 모든 스토리지 관리 기능은 오프라인에서 작업을 수행할 수 있습니다.
+* *보안 및 규정 준수*: Keystone 배포가 고급 암호화, 안전한 액세스 제어, 세부적인 감사 기능 등을 포함할 수 있는 다크 사이트의 보안 및 규정 준수 요구 사항을 충족하는지 확인합니다.
+* *도움말 및 지원*: NetApp 각 계정에 전담 Keystone 성공 관리자를 지정하여 지원 및 문제 해결을 담당하고, 연중무휴 글로벌 지원을 제공합니다.
+
+
+
+NOTE: Keystone Collector는 연결 제한 없이 구성할 수 있으며, 이를 _표준_ 모드라고도 합니다.  자세한 내용은 다음을 참조하세요.link:../installation/installation-overview.html["Keystone Collector에 대해 알아보세요"] .
+
+
+
+== 개인 모드의 Keystone 수집기
+
+Keystone Collector는 스토리지 시스템에서 사용 데이터를 주기적으로 수집하고 해당 지표를 오프라인 사용 보고자와 로컬 파일 저장소로 내보내는 역할을 합니다.  암호화된 형식과 일반 텍스트 형식으로 생성된 파일은 유효성 검사를 거친 후 사용자가 수동으로 NetApp 에 전달합니다.  NetApp의 Keystone 청구 플랫폼은 이러한 파일을 수신하면 이를 인증하고 처리하여 청구 및 구독 관리 시스템에 통합하여 월별 요금을 계산합니다.
+
+image:dark-sites-diagram-computer-system.png["컴퓨터 시스템의 다이어그램"]
+
+서버의 Keystone Collector 서비스는 주기적으로 사용 데이터를 수집하고, 이 정보를 처리하고, 서버에 로컬로 사용 파일을 생성하는 역할을 합니다.  건강 서비스는 시스템 상태 점검을 실시하며 고객이 사용하는 건강 모니터링 시스템과 인터페이스하도록 설계되었습니다.  이러한 보고서는 사용자가 오프라인으로 접근하여 검증하고 문제 해결에 도움이 됩니다.
+
+image:dark-sites-customer-premise.png["고객 구내"]

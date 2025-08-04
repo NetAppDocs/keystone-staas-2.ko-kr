@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: concepts/pricing.html 
+keywords: pricing, billing introduction, Keystone billing 
+summary: Keystone 유연하고 확장 가능한 소비 요구에 맞춰 사용량에 따른 지불 모델을 제공합니다. 
+---
+= Keystone 가격
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone STaaS 종량제 구독 서비스는 스토리지 요구 사항에 맞춰 예측 가능하고 사전 가격이 책정되어 유연하고 확장 가능한 소비를 제공합니다.
+
+Keystone 에서는 다음과 같은 청구 서비스를 제공합니다.
+
+* 다양한 작업 부하 요구 사항을 충족하기 위해 IOPS 및 지연 시간을 기준으로 요금을 지불할 수 있습니다.  Extreme, Premium, Performance, Standard, Value, Object 등 다양한 성능 서비스 등급을 통해 구매한 서비스 수준에 따라 스토리지를 관리할 수 있습니다.
+* 약정된 용량에 대해서는 예측 가능한 요금 청구를 제공하고, 가변적인(버스트) 용량 사용에 대해서는 사용량에 따라 요금을 지불합니다.
+* 하드웨어, 핵심 OS, 지원에 대한 번들 가격을 1달러/TiB 가격으로 선택할 수 있습니다.  각 저장 유형, 파일, 블록, 개체 또는 클라우드 저장 서비스에 대해 단일 송장이 있습니다.
+* 월별, 분기별, 연간 등 유연한 결제 기간과 서비스 및 결제 옵션을 선택할 수 있습니다.
+
+
+Keystone 요금 청구는 약정 용량과 가변 버스트 소비량을 기준으로 합니다.
+
+Keystone 에서 지원되는 다양한 용량에 대한 정보는 다음을 참조하세요.link:../concepts/supported-storage-capacity.html["Keystone 에서 지원되는 저장 용량"] .
+
+*관련 정보*
+
+* link:../concepts/committed-capacity-billing.html["약정 용량 기반 청구"]
+* link:../concepts/consumed-capacity-billing.html["소비 용량에 따른 계량"]
+* link:../concepts/burst-consumption-billing.html["버스트 소비량에 따른 청구"]
+* link:../concepts/misc-volume-billing.html["다양한 볼륨 유형에 따른 청구"]
+* link:../concepts/billing-schedules.html["청구 일정"]
+

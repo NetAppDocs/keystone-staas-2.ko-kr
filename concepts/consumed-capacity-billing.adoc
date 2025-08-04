@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: concepts/consumed-capacity-billing.html 
+keywords: consumed capacity billing, billing and consumed capacity 
+summary: 소비 용량은 서비스 사용 중에 워크로드가 실제로 사용하는 용량입니다. 
+---
+= 소비 용량에 따른 계량
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS는 서비스 사용 중 소비한 용량을 기준으로 측정됩니다.  소비 용량은 워크로드가 실제로 사용하는 용량입니다.
+
+Keystone 서비스 배포의 일부로 NetApp 서비스 소비를 지속적으로 모니터링하고 측정합니다.  최소 5분에 한 번씩 시스템에서 현재 구독에 대한 소비 용량을 자세히 설명하는 소비 기록이 생성됩니다.  이러한 기록은 청구 기간 동안 집계되어 송장과 사용 보고서를 생성합니다.
+
+Keystone 에서 지원되는 다양한 용량에 대한 정보는 다음을 참조하세요.link:../concepts/supported-storage-capacity.html["Keystone 에서 지원되는 저장 용량"] .

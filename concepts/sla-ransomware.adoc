@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: concepts/sla-ransomware.html 
+keywords: ransomware, recovery, guarantee, SLA, Keystone, assurance 
+summary: NetApp 랜섬웨어 복구 보증 프로그램을 통해 랜섬웨어 공격 발생 시 SnapLock Compliance 볼륨에서 스냅샷 데이터 복구를 보장합니다. 
+---
+= 랜섬웨어 복구 보증
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 랜섬웨어 복구 보증 프로그램을 통해 랜섬웨어 공격이 발생할 경우 SnapLock Compliance 볼륨에서 스냅샷 데이터를 복구할 것을 보장합니다.  랜섬웨어 복구 보증 프로그램을 지원하려면 NetApp 랜섬웨어 복구 보증 서비스가 필요하며, 관련 Keystone 주문과 별도로 구매해야 합니다.
+
+
+
+== 서비스 수준
+
+랜섬웨어 복구 보증 서비스는 해당 구독 기간 동안 Keystone 구독을 지원하는 모든 하드웨어에 필요합니다.
+
+
+
+== 서비스 크레딧
+
+
+NOTE: SLA와 보증은 지명을 기준으로 제공됩니다.
+
+SnapLock Compliance 모범 사례에 따라 배포되고 NetApp 전문 서비스가 Ransomware Recovery Assurance Service 구매 시 이를 구성하거나 검증한 경우, SnapLock 으로 보호되는 데이터를 복구할 수 없는 경우 NetApp 에서 서비스 크레딧을 발급합니다.  이러한 크레딧에 대한 기준은 다음과 같습니다.
+
+* 서비스 크레딧은 향후 송장에 적용될 수 있습니다.  크레딧은 약정 계약 가치(CCV)의 10%로 제한되며 구독 기준으로 지급됩니다.
+* 크레딧은 해당 Keystone 주문의 활성 구독 기간 동안 제공됩니다.
+* 월별 청구 구독의 경우, 크레딧은 향후 12개월에 걸쳐 나누어지며 구독 기간이 끝날 때까지 향후 Keystone 청구서에 사용할 수 있습니다.  구독이 12개월 이내에 종료되는 경우, 크레딧을 계속 사용하기 위해 구독을 갱신하거나, 다른 NetApp 송장에 크레딧을 적용할 수 있습니다.
+* 연간 구독의 경우, 크레딧은 다음 Keystone 청구서가 있는 경우 해당 청구서에 적용됩니다.  향후 Keystone 송장이 없으면 크레딧을 다른 NetApp 송장에 적용할 수 있습니다.
+

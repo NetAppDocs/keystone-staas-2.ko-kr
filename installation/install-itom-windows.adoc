@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: installation/install-itom-windows.html 
+keywords: Windows installation Keystone, ITOM Collector installation 
+summary: Windows 기반 시스템에 ITOM Collector를 설치합니다. 
+---
+= Windows 시스템에 ITOM Collector 설치
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ITOM Collector 설치 파일을 다운로드하고, InstallShield 마법사를 실행하고, 필요한 모니터링 자격 증명을 입력하여 Windows 시스템에 ITOM Collector를 설치합니다.
+
+
+NOTE: Keystone 지원팀은 ITOM Collector 설치 파일을 다운로드할 수 있는 동적 링크를 제공하는데, 이 링크는 2시간 후에 만료됩니다.
+
+귀하의 요구 사항에 따라 Linux 시스템에 설치할 수 있습니다.  Linux 시스템에 ITOM Collector를 설치하려면 다음을 참조하세요.link:../installation/install-itom-linux.html["Linux 시스템에 ITOM Collector 설치"] .
+
+Windows 서버에 ITOM 수집기 소프트웨어를 설치하려면 다음 단계를 따르세요.
+
+.시작하기 전에
+Windows 서버의 로컬 보안 정책 설정에서 로컬 정책/사용자 권한 할당에 따라 ITOM Collector 서비스에 *서비스로 로그온* 권한이 부여되었는지 확인하세요.
+
+.단계
+. ITOM 수집기 설치 파일을 Windows 서버에 다운로드합니다.
+. 설치 파일을 열어 InstallShield 마법사를 시작합니다.
+. 최종 사용자 라이선스 계약(EULA)에 동의합니다.  InstallShield 마법사는 필요한 바이너리를 추출하고 자격 증명을 입력하라는 메시지를 표시합니다.
+. ITOM Collector가 실행될 계정의 자격 증명을 입력하세요.
++
+** ITOM Collector가 다른 Windows 서버를 모니터링하지 않는 경우 로컬 시스템을 사용합니다.
+** ITOM Collector가 동일한 도메인의 다른 Windows 서버를 모니터링하는 경우 로컬 관리자 권한이 있는 도메인 계정을 사용하세요.
+** ITOM Collector가 동일한 도메인에 속하지 않은 다른 Windows 서버를 모니터링하는 경우 로컬 관리자 계정을 사용하고 로컬 관리자 자격 증명으로 각 리소스에 연결합니다.  ITOM Collector와 모니터링되는 리소스 간의 인증 문제를 줄이기 위해 비밀번호가 만료되지 않도록 설정할 수 있습니다.
+
+
+. 수집기 크기를 선택하세요.  기본값은 설치 파일에 따라 권장되는 크기입니다.  특별한 요구 사항이 없다면 제안된 크기로 진행하세요.
+. _다음_을 선택하여 설치를 시작하세요.  이미 채워진 폴더를 사용하거나 다른 폴더를 선택할 수 있습니다.  상태 상자에 설치 진행률이 표시되고, 그 다음에 InstallShield 마법사 완료 대화 상자가 표시됩니다.
+
+
+.다음은 무엇인가요?
+성공적으로 설치되면 Keystone 지원팀에 연락하여 ITOM 지원 포털을 통해 ITOM Collector가 성공적으로 설치되었는지 확인하세요.  검증 후, Keystone 지원팀은 ITOM 수집기를 원격으로 구성하고, 추가적인 장치 검색 및 모니터링 설정을 진행하며, 구성이 완료되면 확인 메시지를 보냅니다.  문의사항이나 추가 정보가 있으시면 keystone.services@netapp.com으로 연락해 주시기 바랍니다.

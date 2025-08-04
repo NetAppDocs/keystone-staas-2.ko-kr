@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-aiq.html 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, dashboard overview, manage subscriptions, monitor 
+summary: NetApp Keystone STaaS 구독자인 경우 Digital Advisor 대시보드에서 구독 개요를 확인할 수 있습니다. 
+---
+= Digital Advisor 의 Keystone 대시보드
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone STaaS 구독자인 경우 Digital Advisor 대시보드의 * Keystone 구독* 위젯에서 구독 개요를 확인할 수 있습니다.
+
+고객 또는 관심 목록 이름의 처음 세 글자나 Keystone 구독 번호를 입력하여 특정 Keystone 구독을 검색할 수 있습니다.  관심목록별로 Keystone STaaS 구독을 검색하는 방법에 대한 정보는 다음을 참조하세요.link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["Keystone 관심 목록을 사용하여 검색"] .
+
+Digital Advisor *기존/새 대시보드로 전환* 버튼을 통해 다양한 수준의 구독 데이터와 사용 정보에 대한 통찰력을 제공하는 통합 대시보드를 제공합니다.
+
+.기본(이전) 대시보드
+고객 이름, 구독 번호, 계정 이름, 구독 시작 및 종료 날짜, 구독한 성과 서비스 수준에 따른 용량 사용 그래프를 볼 수 있습니다.  소비 데이터의 수집 타임스탬프를 UTC 시간으로 볼 수 있습니다.
+
+image:old-db-3.png["오래된 대시보드"]
+
+.대체(새로운) 대시보드
+구독에 따른 용량 사용 내역을 확인할 수 있으며, 즉각적인 주의나 조치가 필요한 경고와 알림도 확인할 수 있습니다.  해당 정보는 귀하의 구독 및 사용 상태에 따라 선택적으로 표시됩니다.  다음 정보를 볼 수 있습니다.
+
+* *용량 사용량*: 사용량 없음, 약정 용량의 80%를 초과한 사용량, 버스트 사용량, 버스트 용량을 초과한 사용량 등의 소비 데이터입니다.
+* *알림*: 해당되는 경우 다양한 시나리오에 대한 알림을 볼 수 있습니다.
++
+** *곧 만료*: 구독이 90일 이내에 만료되는 경우.
+** *QoS 경고*: AQoS 정책이 할당되지 않은 볼륨이 있습니다.
++
+
+TIP: *구독* 링크를 클릭하면 *구독* 탭에서 필터링된 구독 목록을 볼 수 있습니다.
+
+
+
+
+
+image:new-db-4.png["새로운 대시보드"]
+
+*모든 구독 보기*를 클릭하면 * Keystone 구독* 페이지에서 볼륨의 사용 세부 정보와 알림을 볼 수 있습니다.
+
+구독 세부 정보, 각 성과 서비스 수준에 대한 사용 차트 및 볼륨 세부 정보는 * Keystone 구독* 화면의 다양한 탭에 표시됩니다.
+
+
+NOTE: Keystone 구독의 용량 소비량은 대시보드와 보고서에 TiB 단위로 표시되며, 소수점 둘째 자리까지 반올림됩니다.  사용량이 0.01TiB 미만이면 값은 0 또는 사용량 없음으로 표시됩니다.  이 화면의 데이터는 UTC 시간(서버 시간대)으로 표시됩니다.  쿼리를 위해 날짜를 입력하면 자동으로 UTC 시간으로 간주됩니다.  사용 지표에 대해 자세히 알아보려면 다음을 참조하세요.link:../concepts/metrics.html#metrics-measurement["지표 측정"] .  Keystone 에서 사용되는 다양한 용량에 대한 정보는 다음을 참조하세요.link:../concepts/supported-storage-capacity.html["지원되는 저장 용량"] .
+
+
+
+== Keystone 관심 목록으로 검색
+
+관심목록은 Digital Advisor 에서 사용할 수 있는 기능입니다.  자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["관심목록 이해하기"^] .  관심목록 생성에 대한 정보는 다음을 참조하세요. https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["관심목록 만들기"^] .
+
+고객 또는 구독 번호에 대한 관심 목록을 만들고, Digital Advisor 화면에서 구독 번호 또는 관심 목록 이름의 처음 세 글자를 사용하여 Keystone 구독을 검색할 수 있습니다.  관심 목록 이름으로 검색하면 * Keystone 구독* 위젯의 *구독* 드롭다운 목록에서 고객과 해당 구독을 볼 수 있습니다.
+
+
+NOTE: 관심 목록으로 검색하면 이전 대시보드의 구독 목록이 검색됩니다.  관심 목록에 구독 번호가 포함된 경우 Digital Advisor 대시보드에는 * Keystone 구독* 위젯만 표시됩니다.
+
+image:watchlist.png["관심목록 화면"]
+
+*관련 정보*
+
+* link:../integrations/dashboard-access.html["Keystone 대시보드 시작하기"]
+* link:../integrations/keystone-bluexp.html["BlueXP 의 Keystone 대시보드"]
+* link:../integrations/subscriptions-tab.html["구독 세부 정보 보기"]
+* link:../integrations/current-usage-tab.html["현재 소비량 세부 정보를 확인하세요"]
+* link:../integrations/consumption-tab.html["소비 추세 보기"]
+

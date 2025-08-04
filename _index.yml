@@ -1,0 +1,76 @@
+---
+indexpage:
+  title: Keystone 문서
+  summary: NetApp Keystone 은 온프레미스와 클라우드 데이터 스토리지 서비스 모두를 위한 종량제 방식의 스토리지 서비스로, 하나의
+    구독으로 제공되며, 스토리지 비용을 클라우드 전반에 걸쳐 재할당할 수 있는 기능을 제공합니다.
+  keywords: Keystone STaaS
+  lead: NetApp Keystone 자본 지출이나 리스보다 운영 비용을 선호하는 고객에게 원활한 하이브리드 클라우드 환경을 제공하는 유연한
+    종량제 구독 기반 서비스입니다.  IT 부서의 리소스 관리 부담을 없애고 긴 조달 주기를 피함으로써 가치 실현 시간을 단축할 수 있습니다.  이
+    라이브러리의 문서를 탐색하여 NetApp Keystone Storage-as-a-Service(STaaS) 제품에 대해 자세히 알아보세요.
+  tiles:
+  - title: 시작하기
+    links:
+    - title: NetApp Keystone 이란 무엇인가요?
+      url: "/concepts/overview.html"
+    - title: Keystone Collector 설치
+      url: "/installation/vapp-installation.html"
+    - title: ITOM Collector 설치
+      url: "/installation/itom-prereqs.html"
+    - title: Keystone Collector를 개인 모드로 설치하세요
+      url: "/dark-sites/overview.html"
+  - title: BlueXP 및 Digital Advisor 의 Keystone 대시보드
+    links:
+    - title: Keystone 대시보드 이해하기
+      url: "/integrations/dashboard-overview.html"
+    - title: Keystone 대시보드에 액세스하세요
+      url: "/integrations/dashboard-access.html"
+    - title: 구독 통찰력 보기
+      url: "/integrations/subscriptions-tab.html"
+    - title: 자산 보기
+      url: "/integrations/assets-tab.html"
+    - title: 데이터 검색 및 보고서 생성
+      url: "/integrations/options.html"
+  - title: Keystone 에서 지원되는 서비스
+    links:
+    - title: Keystone 성과 서비스 수준
+      url: "/concepts/service-levels.html"
+    - title: 서비스 품질(QoS)
+      url: "/concepts/qos.html"
+    - title: 측정 단위는 무엇인가요?
+      url: "/concepts/metrics.html"
+    - title: 지원되는 기본 저장 장치는 무엇입니까?
+      url: "/concepts/supported-storage-services.html"
+    - title: 온프레미스에서 클라우드로 지출을 재분배할 수 있나요?
+      url: "/concepts/capacity-requirements.html#capacity-adjustments"
+  - title: Keystone 가격 및 청구
+    links:
+    - title: Keystone 가격에 대해 알아보세요
+      url: "/concepts/pricing.html"
+    - title: 내 청구 일정
+      url: "/concepts/billing-schedules.html"
+    - title: 약정 용량 기반 청구
+      url: "/concepts/committed-capacity-billing.html"
+    - title: 소비 용량에 따른 계량
+      url: "/concepts/consumed-capacity-billing.html"
+    - title: 약속한 용량보다 더 많이 사용했다면 어떻게 되나요?
+      url: "/concepts/burst-consumption-billing.html"
+  - title: Keystone 서비스로 더 많은 것을 하세요
+    links:
+    - title: 지원팀에 대해 알아보세요
+      url: "/concepts/gssc.html"
+    - title: 사용 빈도가 낮거나 사용하지 않는 데이터는 어떻게 사용할 수 있나요?
+      url: "/concepts/data-tiering.html"
+    - title: Keystone 데이터를 어떻게 보호할 수 있나요?
+      url: "/concepts/adp.html"
+    - title: 스토리지 모니터링, 문제 해결 및 향상
+      url: "/concepts/data-infra-insights.html"
+    - title: 미국 시민 지원
+      url: "/concepts/usps.html"
+  - title: 자세히 알아보기
+    links:
+    - title: Active IQ Digital Advisor
+      url: https://docs.netapp.com/us-en/active-iq/index.html
+    - title: BlueXP
+      url: https://docs.netapp.com/us-en/cloud-manager-family/
+    - title: Active IQ Unified Manager
+      url: https://docs.netapp.com/us-en/active-iq-unified-manager/

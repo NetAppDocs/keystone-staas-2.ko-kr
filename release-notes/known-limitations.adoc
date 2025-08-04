@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-limitations.html 
+keywords: limitations, known limitations in Keystone STaaS 
+summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 나타냅니다.  이러한 제한 사항을 주의 깊게 검토하세요. 
+---
+= Keystone STaaS의 알려진 제한 사항
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+알려진 제한 사항은 Keystone STaaS 서비스나 구성 요소에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다.  이러한 제한 사항을 주의 깊게 검토하세요.
+
+
+
+== Keystone 컬렉터 제한 사항
+
+
+
+=== StorageGRID SSO가 활성화된 상태에서 Keystone Collector 인증에 실패했습니다.
+
+StorageGRID 시스템에 SSO(Single Sign-On)가 활성화된 경우 Keystone Collector는 측정을 지원하지 않습니다.  로그에 다음과 같은 오류 메시지가 표시됩니다.
+
+`panic: json: cannot unmarshal object into Go struct field AuthResponse.data of type string`
+
+지식 기반 문서 참조link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_authenticate_with_StorageGRID_in_SSO_Mode["Keystone Collector가 SSO 모드에서 StorageGRID 인증에 실패했습니다."^] 정보와 해결책을 얻으려면.
+
+
+
+=== vSphere 8.0 업데이트 1에서 Keystone Collector를 시작할 수 없습니다.
+
+VMware vSphere 버전 8.0 업데이트 1이 설치된 Keystone Collector 가상 머신(VM)을 켤 수 없으며 다음 오류 메시지가 표시됩니다.
+
+`Property 'Gateway' must be configured for the VM to power on.`
+
+지식 기반 문서 참조link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_start_on_vSphere_8.0_U1["vSphere 8.0 U1에서 Keystone Collector가 시작되지 않습니다."^] 정보와 해결책을 얻으려면.
+
+
+
+=== Kerberos를 통해 지원 번들을 생성할 수 없습니다.
+
+Keystone Collector 홈 디렉토리가 Kerberos를 사용하여 NFSv4에 마운트된 경우 지원 번들이 생성되지 않고 다음 오류 메시지가 표시됩니다.
+
+`subprocess.CalledProcessError: Command '['sosreport', '--batch', '-q', '--tmp-dir', '/home/<user>']' returned non-zero exit status 1.`
+
+지식 기반 문서 참조 https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_generate_support_bundle_on_Kerberized_home_directory["Keystone Collector가 Kerberized 홈 디렉토리에서 지원 번들을 생성하지 못했습니다."^] 정보와 해결책을 얻으려면.
+
+
+
+=== Keystone Collector는 특정 네트워크 범위 내의 호스트와 통신할 수 없습니다.
+
+Keystone Collector는 10.88.0.0/16 네트워크 범위 내의 장치와 통신할 수 없습니다. `ks-collector` 서비스가 실행 중입니다.  지식 기반 문서 참조link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_container_conflict_with_customer_network["Keystone Collector 컨테이너가 고객 네트워크와 충돌합니다."^] 정보와 해결책을 얻으려면.
+
+
+
+=== Keystone Collector가 고객 루트 SSL CA 인증서를 확인할 수 없습니다.
+
+SSL/TLS 트래픽을 검사하는 환경의 경계 방화벽에서 SSL/TLS 검사가 활성화된 경우, Keystone Collector는 고객의 루트 CA 인증서를 신뢰할 수 없기 때문에 HTTPS 연결을 설정할 수 없습니다.
+
+자세한 내용과 해결 방법은 다음을 참조하세요.link:..//installation/configuration.html#trust-a-custom-root-ca["사용자 정의 루트 CA 신뢰"^] 또는 지식 기반 문서link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_cannot_verify_Customer_Root_SSL_CA_certificate["Keystone Collector가 고객 루트 SSL CA 인증서를 확인할 수 없습니다."^] .

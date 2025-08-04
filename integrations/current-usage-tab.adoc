@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: integrations/current-usage-tab.html 
+keywords: keystone-aiq, digital advisor keystone, current consumption tab, performance service levels, subscriptions 
+summary: 구독 사용량을 이해하려면 약정 용량, 소비 용량, 사용 가능한 용량 등을 확인하세요. 
+---
+= Keystone 구독의 현재 소비량을 확인하세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+약정 용량, 사용된 용량, 사용 가능한 용량 등의 자세한 정보를 보고 구독 사용량에 대한 통찰력을 얻을 수 있으며, 현재 소비 상태가 성능 서비스 수준별로 표시되고 구분됩니다.
+
+BlueXP 또는 Digital Advisor 통해 구독의 현재 소비 상태를 보려면 다음 단계를 따르세요.
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+.단계
+. BlueXP 왼쪽 탐색 메뉴에서 *저장소 > Keystone > 구독*을 선택하세요.
+. 표의 *구독번호* 열에서 구독번호를 선택하면 현재 소비량을 확인할 수 있습니다.
++
+*현재 소비량* 탭으로 이동합니다.
+
++
+image:bxp-current-consumption-graph.png["그래픽 형식의 현재 소비 세부 정보"]
+
++
+선택한 구독에 대해 *보기 형식* 드롭다운에서 *표* 또는 *그래프* 옵션을 사용하여 소비 세부 정보를 표 또는 그래픽 형식으로 볼 수 있습니다.  그래픽 보기에서는 사용된 용량, 프로비저닝된 용량, 커밋된 용량 한도, 버스트 용량 한도를 포함하여 성능 서비스 수준별 현재 소비량을 볼 수 있습니다.
+
++
+표 보기에서는 최대 소비 용량, 만료까지 남은 일수 등의 세부 정보를 볼 수 있습니다.  구독 사용량을 모니터링하는 일환으로 성능 서비스 수준 이름, 소비 상태, 약정 및 사용 용량, 프로비저닝 및 버스트 용량, 사용 가능한 용량 및 볼륨을 볼 수 있습니다.  열 선택기를 사용하여 테이블을 사용자 정의할 수 있습니다.image:column-selector.png["열 선택기 아이콘"] 상.
+
++
+image:bxp-current-consumption-table.png["표 형식의 현재 소비 세부 정보"]
+
+
+
+--
+.Digital Advisor
+--
+.단계
+. Digital Advisor 왼쪽 탐색 창에서 *일반 > Keystone 구독 > 현재 소비*로 이동합니다.
+. *구독* 드롭다운 목록에서 필요한 구독 번호를 선택하거나 검색하세요.
++
+image:aiq-ks-dtls-4.png["현재 소비량 탭"]
+
++
+선택한 구독에 대해 구독 시작 및 종료 날짜, 월별 또는 연간 등의 청구 기간 등의 세부 정보를 볼 수 있습니다.  구독 사용량의 일부로 성능 서비스 수준 이름, 약정, 사용, 사용 가능한 용량, 현재 및 누적 버스트 사용량(TiB)을 볼 수 있습니다.  더 높은 소비를 기록한 특정 성과 서비스 수준은 강조 표시됩니다.  볼륨에 대해 생성된 경고 및 알림도 볼 수 있습니다.
+
++
+현재 소비량과 함께 과거 사용 데이터를 비교하여 보는 것도 좋습니다.  *과거 데이터 보기* 버튼을 클릭하여 *소비 추세* 탭으로 이동하면 동일한 구독에 대한 과거 데이터를 볼 수 있습니다.
+
+
+
+--
+====
+Keystone 스토리지 서비스 및 관련 성능 서비스 수준에 대한 정보는 다음을 참조하세요.link:../concepts/service-levels.html["Keystone 의 성능 서비스 수준"] .
+
+*관련 정보*
+
+* link:../integrations/dashboard-overview.html["Keystone 대시보드 이해하기"]
+* link:../integrations/subscriptions-tab.html["구독 세부 정보 보기"]
+* link:../integrations/consumption-tab.html["소비 추세 보기"]
+* link:../integrations/subscription-timeline.html["구독 일정 보기"]
+* link:../integrations/assets-tab.html["Keystone 구독 자산 보기"]
+* link:../integrations/assets.html["Keystone 구독 전반에 걸쳐 자산 보기"]
+* link:../integrations/volumes-objects-tab.html["볼륨 및 객체 세부 정보 보기"]
+

@@ -1,0 +1,172 @@
+---
+sidebar: sidebar 
+permalink: rest-api/get-customer-consumption.html 
+keywords: api, consumption, subscriptions, customerID, keystone, Digital Advisor 
+summary: Digital Advisor REST API는 주어진 customerID와 연관된 모든 구독에 대한 현재 소비 세부 정보를 검색합니다. 
+---
+= Digital Advisor REST API를 사용하여 고객 소비 세부 정보를 얻으세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 API는 주어진 customerID와 연관된 모든 구독에 대한 현재 소비 세부 정보를 검색합니다.
+
+*요구:*
+
+[cols="24%,76%"]
+|===
+
+
+| *방법* | 얻다 
+
+
+| *종료점* | `https://api.activeiq.netapp.com/v1/keystone/customer/consumption-details` 
+
+
+| *매개변수*  a| 
+* 유형: "고객"
+* id: <고객 ID>
+
+
+
+
+| *헤더*  a| 
+* 수락: application/json
+* 권한 부여 토큰: <액세스 키>
+
+
+|===
+*응답:* API는 주어진 고객에 대한 현재 서비스 사용 지표와 함께 모든 구독 목록을 포함하는 JSON 객체로 응답합니다.  다음은 응답의 예입니다.
+
+[listing]
+----
+{
+"result":  {
+"returned_records": "string",
+"records": [
+{
+"subscription":  {
+"account_name": "string",
+"number": "string",
+"start_date": "string",
+"end_date": "string"
+},
+"service_levels": [
+{
+"name": "string",
+"committed_tib": "string",
+"consumed_tib": "string",
+"consumed_timestamp_utc": "string",
+"burst_tib": "string",
+"accrued_burst_tib": "string"
+}
+]
+}
+],
+"request_id": "string",
+"response_time": "string"
+}
+}
+----
+*상태 코드*: 200 – 요청 성공
+
+*컬 예시*:
+
+[source, curl]
+----
+curl -X 'GET' \ 'https://api.activeiq.netapp.com/v1/keystone/customer/consumption-details?type=customer&id=<customerID>' \ -H 'accept: application/json' \ -H 'authorizationToken: <access-key>'
+----
+
+
+== 고객의 과거 소비 내역을 확인하세요
+
+이 API는 지정된 시간 범위에 따라 주어진 customerID와 연결된 모든 구독에 대한 과거 소비 세부 정보를 검색합니다.
+
+*요구:*
+
+[cols="24%,76%"]
+|===
+
+
+| *방법* | 얻다 
+
+
+| *종료점* | `https://api.activeiq.netapp.com/v1/keystone/customer/historical-consumption-details` 
+
+
+| *매개변수*  a| 
+* 유형: "고객"
+* id: <고객 ID>
+* from_date_utc: <시작 날짜(RFC3339 형식)>
+* to_date_utc: <종료 날짜(RFC3339 형식)>
+
+
+
+
+| *헤더*  a| 
+* 수락: application/json
+* 권한 부여 토큰: <액세스 키>
+
+
+|===
+*응답:*
+
+API는 선택된 기간 동안 해당 고객에 대한 과거 서비스 사용 지표와 함께 모든 구독 목록을 포함하는 JSON 객체로 응답합니다.  다음은 응답의 예입니다.
+
+[listing]
+----
+{
+"results":  {
+"returned_records": 0,
+"records": [
+{
+"subscription":  {
+"account_name": "string",
+"number": "string",
+"start_date": "2023-08-24T14:15:22Z",
+"end_date": "2023-08-24T14:15:22Z"
+},
+"service_levels": [
+{
+"name": "string",
+"historical_consumption": [
+{
+"committed_tib": 0,
+"consumed_tib": 0,
+"timestamp_utc": "2023-08-24T14:15:22Z",
+"burst_tib": 0,
+"accrued_burst_tib": 0,
+"is_invoiced": true
+}
+]
+}
+]
+}
+],
+"request_parameters":  {
+"from_date_utc": "2023-08-24",
+"to_date_utc": "2023-08-24",
+"customer_id": "string"
+},
+"request_id": "string",
+"response_time": "string",
+"customer":  {
+"name": "string",
+"id": "string"
+}
+}
+}
+----
+*상태 코드*: 200 – 요청 성공
+
+*컬 예시*:
+
+[source, curl]
+----
+curl -X 'GET' \ 'https://api.activeiq-stg.netapp.com/v1/keystone/customer/historical-consumption-details? type=customer&id=<customerID>&from_date_utc=2023-08-24T14%3A15%3A22Z&t _date_utc=2023-08-24T14%3A15%3A22Z' \ -H 'accept: application/json' \ -H 'authorizationToken: <access-key>'
+----

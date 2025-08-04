@@ -1,0 +1,202 @@
+= 기타 요구 사항
+:allow-uri-read: 
+
+
+
+
+== 기타 요구 사항
+
+다음의 일반 요구 사항이 충족되는지 확인하세요.
+
+
+
+=== 네트워킹 요구 사항
+
+Keystone Collector의 네트워킹 요구 사항은 다음 표에 나와 있습니다.
+
+
+NOTE: Keystone Collector를 사용하려면 인터넷 연결이 필요합니다.  기본 게이트웨이(NAT를 통해)를 통한 직접 라우팅이나 HTTP 프록시를 통해 인터넷 연결을 제공할 수 있습니다.  두 가지 변형 모두 여기에 설명되어 있습니다.
+
+|===
+
+
+| 원천 | 목적지 | 서비스 | 프로토콜 및 포트 | 범주 | 목적 
+
+
+ a| 
+Keystone Collector( Keystone ONTAP 용)
+ a| 
+Active IQ Unified Manager (통합 관리자)
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+필수( Keystone ONTAP 사용하는 경우)
+ a| 
+ONTAP 에 대한 Keystone Collector 사용 메트릭 수집
+
+
+
+ a| 
+Keystone Collector( Keystone StorageGRID 용)
+ a| 
+StorageGRID 관리 노드
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+필수( Keystone StorageGRID 사용하는 경우)
+ a| 
+StorageGRID 대한 Keystone Collector 사용 메트릭 수집
+
+
+
+ a| 
+Keystone 컬렉터(일반)
+ a| 
+인터넷(나중에 제공되는 URL 요구 사항에 따라)
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+필수(인터넷 연결)
+ a| 
+Keystone Collector 소프트웨어, OS 업데이트 및 메트릭 업로드
+
+
+
+ a| 
+Keystone 컬렉터(일반)
+ a| 
+고객 HTTP 프록시
+ a| 
+HTTP 프록시
+ a| 
+고객 프록시 포트
+ a| 
+필수(인터넷 연결)
+ a| 
+Keystone Collector 소프트웨어, OS 업데이트 및 메트릭 업로드
+
+
+
+ a| 
+Keystone 컬렉터(일반)
+ a| 
+고객 DNS 서버
+ a| 
+DNS
+ a| 
+TCP/UDP 53
+ a| 
+필수적인
+ a| 
+DNS 확인
+
+
+
+ a| 
+Keystone 컬렉터(일반)
+ a| 
+고객 NTP 서버
+ a| 
+엔티피
+ a| 
+UDP 123
+ a| 
+필수적인
+ a| 
+시간 동기화
+
+
+
+ a| 
+Keystone Collector( Keystone ONTAP 용)
+ a| 
+통합 관리자
+ a| 
+MySQL
+ a| 
+TCP 3306
+ a| 
+선택적 기능
+ a| 
+Keystone Collector에 대한 성능 메트릭 수집
+
+
+
+ a| 
+Keystone 컬렉터(일반)
+ a| 
+고객 모니터링 시스템
+ a| 
+HTTPS
+ a| 
+TCP 7777
+ a| 
+선택적 기능
+ a| 
+Keystone Collector 상태 보고
+
+
+
+ a| 
+고객의 운영 워크스테이션
+ a| 
+Keystone 컬렉터
+ a| 
+SSH
+ a| 
+TCP 22
+ a| 
+관리
+ a| 
+Keystone Collector Management에 대한 액세스
+
+
+
+ a| 
+NetApp ONTAP 클러스터 및 노드 관리 주소
+ a| 
+Keystone 컬렉터
+ a| 
+HTTP_8000, 핑
+ a| 
+TCP 8000, ICMP 에코 요청/응답
+ a| 
+선택적 기능
+ a| 
+ONTAP 펌웨어 업데이트를 위한 웹 서버
+
+|===
+
+NOTE: Unified Manager를 새로 설치하는 동안 MySQL의 기본 포트인 3306은 localhost로만 제한되므로 Keystone Collector의 성능 지표 수집이 차단됩니다. 자세한 내용은 다음을 참조하세요. link:addl-req.html["ONTAP 요구 사항"] .
+
+
+
+=== URL 접근
+
+Keystone Collector는 다음 인터넷 호스트에 액세스해야 합니다.
+
+|===
+
+
+| 주소 | 이유 
+
+
+ a| 
+https://keystone.netapp.com[]
+ a| 
+Keystone Collector 소프트웨어 업데이트 및 사용 보고
+
+
+
+ a| 
+https://support.netapp.com[]
+ a| 
+청구 정보 및 AutoSupport 제공을 위한 NetApp HQ
+
+|===

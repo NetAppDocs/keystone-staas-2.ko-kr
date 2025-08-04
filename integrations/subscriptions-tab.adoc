@@ -1,0 +1,118 @@
+---
+sidebar: sidebar 
+permalink: integrations/subscriptions-tab.html 
+keywords: keystone-aiq, digital advisor keystone, subscriptions-tab, performance levels, keystone-bluexp 
+summary: Keystone 구독에 대해 자세히 알아보려면 구독 탭에서 모든 구독 목록을 확인하세요. 
+---
+= Keystone 구독에 대한 세부 정보 보기
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+BlueXP 와 Digital Advisor 의 *구독* 탭에서 모든 구독 목록을 볼 수 있습니다.  이 탭은 귀하의 구독 상태와 사용량에 따라 이해하기 쉬운 통찰력을 제공하여 귀하가 최신 정보를 얻고 필요한 경우 조치를 취하는 데 도움이 됩니다.
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+BlueXP 의 *구독* 탭은 *구독*과 *성능 서비스 수준*의 두 섹션으로 나뉩니다.  각 섹션에서는 Keystone 구독을 관리하고 모니터링하는 데 도움이 되는 구체적인 통찰력을 제공합니다.  구독에 대한 자세한 정보를 보려면 다음 단계를 따르세요.
+
+.단계
+. BlueXP 왼쪽 탐색 메뉴에서 *저장소 > Keystone > 구독*으로 이동합니다.
++
+image:bxp-subscription-list-1.png["구독 탭 세부 정보 보기"]
+
++
+구독 전반의 용량 상태, 구독 만료 상태, Keystone 버전 등의 주요 지표를 확인할 수 있습니다.  자세한 내용은 다음을 참조하세요.link:../integrations/keystone-bluexp.html["BlueXP 의 Keystone 대시보드"] .
+
++
+다음 세부 정보는 표에서 확인할 수 있습니다.
+
++
+** *구독 번호*: NetApp 에서 할당한 Keystone 구독의 구독 번호입니다.
+** *추적 ID*: 구독 활성화 시 할당된 추적 ID입니다.  이는 각 구독 및 사이트에 대한 고유 ID로, 구독을 추적하는 데 사용됩니다.
+** *고객 이름*: Keystone 구독과 관련된 고객의 이름입니다.
+** *연결된 구독*: 기본 구독에 연결된 보조 구독이 있는 경우, 이 열에는 기본 구독에 대한 연결된 구독 번호가 나열됩니다.  이 구독 번호는 기본 또는 보조(연결) 구독의 번호일 수 있습니다.
+** * Keystone 버전*: 구독에 사용되는 Keystone 서비스의 버전입니다.  성과 서비스 수준에 대한 요금제 규칙은 구독 버전마다 다를 수 있습니다.  버전 v1에 대해 자세히 알아보려면 다음을 참조하세요. https://docs.netapp.com/us-en/keystone/index.html["Keystone 구독 서비스 | 버전 1 문서"^] .
+** *청구 기간*: 구독의 청구 기간입니다.
+** *성능 서비스 수준*: 구독과 연관된 요금제의 수로, 각 요금제는 특정 성능 서비스 수준과 약정 용량에 해당합니다.
+** *최대 용량*: 구독 내에서 소비되는 최대 용량입니다.
+** *구독 만료까지 남은 일수*: 구독이 만료되기까지 남은 일수입니다.
++
+
+TIP: 열 선택기를 사용하여 표에 표시되는 열을 사용자 정의할 수 있습니다.image:column-selector.png["열 선택기 아이콘"] 상.  특정 필드와 열의 경우, 데이터에 대한 추가 정보를 제공하는 정보나 경고 아이콘, 도구 설명이 표시될 수 있습니다.
+
+
+
+. *성능 서비스 수준* 하위 탭을 선택하면 모든 구독에 대한 성능 서비스 수준을 볼 수 있습니다.
++
+image:bxp-performance-levels.png["모든 구독에 대한 성능 서비스 수준 보기"]
+
++
+** *구독에 대한 성과 서비스 수준*: 구독에 대한 성과 서비스 수준 수를 표시합니다.
+** *구독 전반에 걸친 프로비저닝 일관성*: 과도하게 프로비저닝된 성능 서비스 수준과 프로비저닝이 부족한 성능 서비스 수준에 대한 수를 보여줍니다.
++
+고객 이름, 구독 번호, 성능 서비스 수준 유형, 총 볼륨 수, QoS 준수 상태와 같은 주요 세부 정보를 포함하여 성능 서비스 수준 목록을 볼 수 있습니다.  이 표에는 보호된 볼륨 수, 총 약정, 소비, 프로비저닝, 사용 가능한 용량(버스트 포함 및 미포함), 누적 버스트 용량도 표시됩니다.
+
+
+
+
+
+--
+.Digital Advisor
+--
+Digital Advisor 에서 구독을 보려면 다음 단계를 따르세요.
+
+.단계
+. Digital Advisor 왼쪽 탐색 창에서 *일반 > Keystone 구독 > 구독*으로 이동합니다.
++
+여기에서 모든 구독을 볼 수 있으며, 각 구독에 대한 자세한 정보도 확인할 수 있습니다.
+
++
+image:all-subs-4.png["구독 탭 이미지"]
+
++
+특정 필드와 열의 경우, 데이터에 대한 추가 정보를 제공하는 정보나 경고 아이콘, 도구 설명이 표시될 수 있습니다.
+
++
+** *구독 번호*: NetApp 에서 할당한 Keystone 구독의 구독 번호입니다.
+** *연계 구독*: 이 컬럼은 선택적으로 사용할 수 있습니다.  기본 구독에 연결된 보조 구독이 있는 경우, 이 열에는 기본 구독에 연결된 구독 번호가 나열됩니다.  이 구독 번호는 기본 또는 보조(연결) 구독의 번호일 수 있습니다.
+** *추적 ID*: 구독 활성화 시 할당된 추적 ID입니다.  이는 각 구독 및 사이트에 대한 고유한 ID입니다.
++
+
+TIP: 고급 데이터 보호 추가 서비스에 가입한 경우 구독 번호에 대한 툴팁을 클릭하면 MetroCluster 설정에서 파트너 구독의 추적 ID를 볼 수 있습니다.  MetroCluster 구성에서 파트너 구독에 따른 자세한 소비량을 보려면 다음을 참조하세요.link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["고급 데이터 보호를 위한 참조 차트"] .
+
+** *사용 유형*: 여러 Keystone 버전을 구독했을 수 있습니다.  성과 서비스 수준에 대한 요금제 규칙은 구독 버전마다 다를 수 있습니다.  이 열의 값을 살펴보면 사용 유형이 프로비저닝된 사용량, 물리적 사용량 또는 논리적 사용량에 따라 청구되는지 알 수 있습니다.  버전 1에 대해 자세히 알아보려면 다음을 참조하세요. https://docs.netapp.com/us-en/keystone/index.html["Keystone 구독 서비스 | 버전 1 문서"^] .
+** *청구 기간*: 구독의 청구 기간입니다.
+** *시작 날짜*: 구독 시작 날짜입니다.
+** *종료일*: 구독 종료일.  매달 자동으로 갱신되는 월별 청구 구독이 있는 경우 `Month-on-month` 종료 날짜 대신.  이 날짜를 기준으로 종료 예정인 구독이나 자동 갱신 정책이 적용된 구독에 대한 알림이 표시될 수 있습니다.
+** *사용 상태*: 사용량이 구독 한도 내에 있는지, 아니면 초과하는지를 나타내는 사용량 지표를 표시합니다.  가장 높은 소비 기록을 보고 싶다면 이 열을 기준으로 목록을 정렬할 수 있습니다.
+** image:subs-dtls-icon.png["상"]: 구독을 위해 이 아이콘을 클릭하면 해당 구독의 사용 세부 정보가 있는 *현재 소비* 탭이 열립니다.
+** image:aiq-ks-time-icon.png["상"]: 이 아이콘을 클릭하면 *소비 추세* 탭이 열리고, 여기서 이 구독에 포함된 각 성능 서비스 수준에 대한 과거 사용 데이터를 볼 수 있습니다.
++
+각 구독의 사용 상태를 확인하려면 사용 지표를 참조하세요.
+
++
+image:icon-grey.png["회색 점 아이콘"]*소비 없음*: 성능 서비스 수준의 약정 용량에 대해 기록된 용량 사용량이 없습니다. image:icon-green.png["녹색 점 아이콘"] *정상*: 소비량이 정상입니다. image:icon-amber.png["주황색 점 아이콘"] *높음*: 최대 소비, 즉 사용량이 약정 용량의 100% 이상에 도달하려고 하는 상태입니다. image:icon-red.png["빨간색 점 아이콘"] *버스트*: 소비량이 버스트 한도 내에 있습니다.  버스트 소비량은 성능 서비스 수준의 100% 커밋 용량을 초과하는 소비량이며, 합의된 버스트 사용 한도 내에 있습니다. image:icon-purple.png["보라색 점 아이콘"] *버스트 한도 초과*: 합의된 버스트 한도를 초과하는 소비를 나타냅니다.
+
+
+
+
+
+--
+====
+*관련 정보*
+
+* link:../integrations/dashboard-overview.html["Keystone 대시보드 이해하기"]
+* link:../integrations/current-usage-tab.html["현재 소비량 세부 정보를 확인하세요"]
+* link:../integrations/consumption-tab.html["소비 추세 보기"]
+* link:../integrations/subscription-timeline.html["구독 일정 보기"]
+* link:../integrations/assets-tab.html["Keystone 구독 자산 보기"]
+* link:../integrations/assets.html["Keystone 구독 전반에 걸쳐 자산 보기"]
+* link:../integrations/volumes-objects-tab.html["볼륨 및 객체 세부 정보 보기"]
+

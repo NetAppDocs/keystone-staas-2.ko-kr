@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: dark-sites/configure-collector.html 
+keywords: configure, keystone, collector, private mode, darksite mode, tui utility 
+summary: '인터넷 접속이 불가능한 환경(다크 사이트 또는 프라이빗 모드라고도 함)에서 Keystone Collector가 사용 데이터를 수집할 수 있도록 몇 가지 구성 작업을 완료하세요.' 
+---
+= 개인 모드에서 Keystone Collector 구성
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+인터넷 접속이 불가능한 환경(다크 사이트 또는 프라이빗 모드라고도 함)에서 Keystone Collector가 사용 데이터를 수집할 수 있도록 몇 가지 구성 작업을 완료하세요.  이는 필요한 구성 요소를 활성화하고 스토리지 환경과 연결하기 위한 일회성 활동입니다.  Keystone Collector를 구성하면 Active IQ Unified Manager 에서 관리하는 모든 ONTAP 클러스터를 모니터링합니다.
+
+
+NOTE: Keystone Collector는 구성 및 모니터링 활동을 수행하기 위한 Keystone Collector 관리 터미널 사용자 인터페이스(TUI) 유틸리티를 제공합니다.  Enter 키와 화살표 키 등 다양한 키보드 컨트롤을 사용하여 옵션을 선택하고 이 TUI를 탐색할 수 있습니다.
+
+.단계
+. Keystone Collector 관리 TUI 유틸리티를 시작합니다.
++
+`keystone-collector-tui`
+
+. *구성 > 고급*으로 이동합니다.
+. *다크사이트 모드* 옵션을 전환합니다.
++
+image:dark-site-mode-1.png["다크사이트 모드"]
+
+. *저장*을 선택하세요.
+. *구성 > KS-Collector*로 이동하여 Keystone Collector를 구성합니다.
+. *시스템으로 KS Collector 시작* 필드를 전환합니다.
+. * ONTAP 사용량 수집* 필드를 전환합니다.  Active IQ Unified Manager (Unified Manager) 서버 및 사용자 계정의 세부 정보를 추가합니다.
+. *선택 사항*: 구독에 데이터 계층화가 필요한 경우 *계층화 요금제 사용* 필드를 전환합니다.
+. 구매한 구독 유형에 따라 *사용 유형*을 업데이트하세요.
++
+
+NOTE: 구성하기 전에 NetApp 의 구독과 연관된 사용 유형을 확인하세요.
+
++
+image:dark-site-usage-type-1.png["사용 유형 옵션"]
+
+. *저장*을 선택하세요.
+. *구성 > KS-Collector*로 이동하여 Keystone Collector 키 쌍을 생성합니다.
+. *암호화 키 관리자*로 가서 Enter를 누릅니다.
++
+image:dark-site-encryption-key-manager-1.png["암호화 키 관리자 옵션"]
+
+. *수집기 키 쌍 생성*을 선택하고 Enter를 누릅니다.
++
+image:dark-site-generate-collector-keypair-1.png["수집기 키페어 생성 옵션"]
+
+. TUI의 메인 화면으로 돌아가서 *서비스 상태* 정보를 확인하여 Keystone Collector가 정상 상태인지 확인하세요.  시스템은 서비스가 *전반적으로: 양호* 상태임을 표시해야 합니다.  최대 10분 정도 기다려 보세요. 이 기간이 지난 후에도 전반적인 상태가 여전히 좋지 않으면 이전 구성 단계를 검토하고 NetApp 지원팀에 문의하세요.
++
+image:dark-site-overall-healthy-2.png["서비스 상태"]
+
+. 홈 화면에서 *셸로 종료* 옵션을 선택하여 Keystone Collector 관리 TUI를 종료합니다.
+. 생성된 공개 키를 검색합니다.
++
+`~/collector-public.pem`
+
+. 보안된 비 USPS 사이트의 경우 이 파일이 포함된 이메일을 ng-keystone-secure-site-upload@netapp.com으로 보내고, 보안된 USPS 사이트의 경우 ng-keystone-secure-site-usps-upload@netapp.com으로 보내세요.
+
+
+
+
+== 사용 보고서 내보내기
+
+매월 말에 NetApp 에 월별 사용 요약 보고서를 보내야 합니다.  이 보고서는 수동으로 생성할 수 있습니다.
+
+사용 보고서를 생성하려면 다음 단계를 따르세요.
+
+. Keystone Collector TUI 홈 화면에서 *사용량 내보내기*로 이동합니다.
+. 파일을 모아서 보안이 강화된 비 USPS 사이트의 경우 ng-keystone-secure-site-upload@netapp.com으로, 보안이 강화된 USPS 사이트의 경우 ng-keystone-secure-site-usps-upload@netapp.com으로 보내주세요.
++
+Keystone Collector는 일반 파일과 암호화된 파일을 모두 생성하는데, 이는 NetApp 에 수동으로 전송해야 합니다.  클리어 파일 보고서에는 고객이 검증할 수 있는 다음과 같은 세부 정보가 포함되어 있습니다.
+
++
+image:dark-site-clear-file-report-1.png["파일 보고서 지우기"]
+
+
+
+
+
+== ONTAP 업그레이드
+
+Keystone Collector는 TUI를 통해 ONTAP 업그레이드를 지원합니다.
+
+ONTAP 업그레이드하려면 다음 단계를 따르세요.
+
+. *유지관리 > ONTAP 웹서버 업그레이드*로 이동합니다.
+. ONTAP 업그레이드 이미지 파일을 */opt/netapp/ontap-upgrade/*에 복사한 다음 *웹 서버 시작*을 선택하여 웹 서버를 시작합니다.
++
+image:dark-site-start-webserver-1.png["웹 서버 시작 옵션"]
+
+. 로 가다 `http://<collector-ip>:8000` 업그레이드 지원을 위해 웹 브라우저를 사용합니다.
+
+
+
+
+== Keystone Collector를 다시 시작하세요
+
+TUI를 통해 Keystone Collector 서비스를 다시 시작할 수 있습니다.  TUI에서 *유지 관리 > 수집기 다시 시작* 서비스로 이동합니다.  이렇게 하면 모든 수집기 서비스가 재부팅되고, TUI 홈 화면에서 해당 상태를 모니터링할 수 있습니다.
+
+image:dark-site-restart-collector-services-1.png["수집기 서비스 재시작 옵션"]

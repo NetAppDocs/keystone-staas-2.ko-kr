@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: concepts/adp.html 
+keywords: data protection advanced 
+summary: 고급 데이터 보호 추가 서비스를 사용하여 미션 크리티컬 워크로드의 효율적인 데이터 보호를 보장하세요. 
+---
+= 고급 데이터 보호에 대해 알아보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS 구독을 통해 고급 데이터 보호 추가 서비스를 구독할 수 있습니다.  이 추가 서비스는 NetApp MetroCluster 기술을 사용하여 0.01%의 복구 지점 목표(RPO)로 미션 크리티컬 워크로드의 효율적인 데이터 보호를 보장합니다.
+
+
+NOTE: 파일 및 블록 스토리지를 위한 Keystone STaaS 표준 서비스는 SnapMirror, SnapVault , Snapshot과 같은 NetApp 기술을 사용하여 기본 데이터 보호 서비스를 제공합니다.
+
+표준 및 클라우드 서비스에 대한 정보는 다음을 참조하세요.link:../concepts/supported-storage-services.html["Keystone STaaS 서비스"] .
+
+Keystone 고급 데이터 보호 서비스는 데이터를 보조 사이트에 동기적으로 미러링할 수 있습니다.  1차 사이트에 재해가 발생하는 경우, 2차 사이트가 데이터 손실 없이 작업을 인계할 수 있습니다.  이 기능은 다음을 활용합니다.link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"] 두 사이트 간의 구성을 통해 데이터 보호를 활성화합니다.  고급 데이터 보호 추가 서비스는 파일 및 블록 저장 서비스에만 사용할 수 있습니다.  이 추가 서비스의 일부로, `Advanced Data-Protect` 귀하의 구독에는 성과 서비스 수준이 할당됩니다.
+
+MetroCluster 구성에서 소비량을 보는 방법에 대한 정보는 다음을 참조하세요.link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["고급 데이터 보호를 위한 참조 차트"] .
+
+추가 요금은 소스 데이터, 미러링된 사본, 미러링되지 않은 데이터를 포함하여 구독의 모든 용량에 적용됩니다.
+
+다음 사항에 유의하세요.
+
+* 이 서비스는 연관된 저장소의 약정된 용량의 100%를 약정된 용량으로 사용합니다.
+* 요금은 기본 사이트와 보조 사이트 모두에 적용되며, 소스 클러스터와 대상 클러스터 모두에 적용됩니다.
+* 요금은 파일 및 블록 저장 서비스에만 적용됩니다.
+
+
+다음 MetroCluster 시나리오가 지원됩니다.
+
+image:mcc-1.png["Keystone 에서 지원하는 MetroCluster 구성"]

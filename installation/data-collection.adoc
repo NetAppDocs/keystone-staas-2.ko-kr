@@ -1,0 +1,365 @@
+---
+sidebar: sidebar 
+permalink: installation/data-collection.html 
+keywords: type of data collected by Keystone collector 
+summary: Keystone ONTAP 및 StorageGRID 구독에 대한 구성, 상태 및 사용 정보를 수집합니다.  또한 ONTAP 성능 데이터를 수집할 수도 있습니다. 
+---
+= Keystone 수집하는 사용자 데이터 유형
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone Keystone ONTAP 및 Keystone StorageGRID 구독에서 구성, 상태 및 사용 정보를 수집하고 Keystone Collector를 호스팅하는 가상 머신(VM)에서 원격 측정 데이터를 수집합니다.  Keystone Collector에서 이 옵션을 활성화하면 ONTAP 에 대한 성능 데이터만 수집할 수 있습니다.
+
+
+
+== ONTAP 데이터 수집
+
+.<strong> ONTAP 에 대해 수집된 사용 데이터: 자세히 알아보기</strong>
+[%collapsible]
+====
+다음 목록은 ONTAP 에 대해 수집된 용량 소비 데이터의 대표적인 샘플입니다.
+
+* 클러스터
++
+** 클러스터UUID
+** 클러스터 이름
+** 일련번호
+** 위치( ONTAP 클러스터에 입력된 값 기반)
+** 연락처
+** 버전
+
+
+* 노드
++
+** 일련번호
+** 노드 이름
+
+
+* 볼륨
++
+** 집계 이름
+** 볼륨 이름
+** 볼륨인스턴스UUID
+** IsCloneVolume 플래그
+** IsFlexGroupConstituent 플래그
+** IsSpaceEnforcementLogical 플래그
+** IsSpaceReportingLogical 플래그
+** Afs에 의해 사용된 논리적 공간
+** 퍼센트스냅샷스페이스
+** 성능 계층 비활성 사용자 데이터
+** 성능 계층 비활성 사용자 데이터 백분율
+** QoSAdaptivePolicyGroup 이름
+** QoSPolicyGroup 이름
+** 크기
+** 사용된
+** 물리적 사용됨
+** 스냅샷에 사용된 크기
+** 유형
+** 볼륨 스타일 확장
+** Vserver 이름
+** IsVsRoot 플래그
+
+
+* V서버
++
+** 가상 서버 이름
+** VserverUUID
+** 하위 유형
+
+
+* 저장 집계
++
+** 스토리지 유형
+** 집계 이름
+** 집계 UUID
+
+
+* 집계 객체 저장소
++
+** ObjectStoreName
+** 객체 저장소 UUID
+** 공급자 유형
+** 집계 이름
+
+
+* 볼륨 복제
++
+** FlexClone
+** 크기
+** 사용된
+** V서버
+** 유형
+** 부모 볼륨
+** 부모V서버
+** IsConstituent
+** 분할 추정
+** 상태
+** FlexCloneUsedPercent
+
+
+* 스토리지 LUN
++
+** LUN UUID
+** LUN 이름
+** 크기
+** 사용된
+** IsReserved 플래그
+** IsRequested 플래그
+** LogicalUnit 이름
+** QoSPolicyUUID
+** QoSPolicyName
+** 볼륨UUID
+** 볼륨 이름
+** SVMUUID
+** SVM 이름
+
+
+* 저장 볼륨
++
+** 볼륨인스턴스UUID
+** 볼륨 이름
+** SVM 이름
+** SVMUUID
+** QoSPolicyUUID
+** QoSPolicyName
+** 용량 계층 발자국
+** 성능 계층 발자국
+** 총 발자국
+** 계층화 정책
+** IsProtected 플래그
+** IsDestination 플래그
+** 사용된
+** 물리적 사용됨
+** 복제 부모 UUID
+** Afs에 의해 사용된 논리적 공간
+
+
+* QoS 정책 그룹
++
+** 정책그룹
+** QoSPolicyUUID
+** 최대 처리량
+** 최소 처리량
+** 최대 처리량 IOPS
+** 최대 처리량(MBps)
+** 최소 처리량 IOPS
+** 최소 처리량(MBps)
+** IsShared 플래그
+
+
+* ONTAP 적응형 QoS 정책 그룹
++
+** QoSPolicyName
+** QoSPolicyUUID
+** 피크 IOPS
+** 피크 IOPS 할당
+** 절대 최소 IOPS
+** 예상 IOPS
+** 예상 IOPS 할당
+** 블록 크기
+
+
+* 발자취
++
+** V서버
+** 용량
+** 총 발자국
+** VolumeBlocksFootprintBin0
+** VolumeBlocksFootprintBin1
+
+
+* MetroCluster 클러스터
++
+** 클러스터UUID
+** 클러스터 이름
+** 원격 클러스터 UUID
+** 원격클러저이름
+** 로컬 구성 상태
+** 원격 구성 상태
+** 방법
+
+
+* 수집기 관측 가능성 지표
++
+** 수집 시간
+** Active IQ Unified Manager API 엔드포인트가 쿼리되었습니다.
+** 응답 시간
+** 레코드 수
+** AIQUM인스턴스 IP
+** CollectorInstance ID
+
+
+
+
+====
+.<strong> ONTAP 에 대해 수집된 성능 데이터: 자세히 알아보기</strong>
+[%collapsible]
+====
+다음 목록은 ONTAP 에 대해 수집된 성능 데이터의 대표적인 샘플입니다.
+
+* 클러스터 이름
+* 클러스터 UUID
+* 개체ID
+* 볼륨 이름
+* 볼륨 인스턴스 UUID
+* V서버
+* VserverUUID
+* 노드 시리얼
+* ONTAP 버전
+* AIQUM 버전
+* 골재
+* 집계UUID
+* 리소스키
+* 타임스탬프
+* IOPSPerTb
+* 숨어 있음
+* 읽기 지연 시간
+* 쓰기MBps
+* QoSMinThroughput 대기 시간
+* QoSNBladeLatency
+* 사용된 헤드룸
+* 캐시 미스 비율
+* 기타 대기 시간
+* QoSAggregateLatency
+* 아이옵스
+* QoSNetworkLetency
+* 사용 가능한 작업
+* 쓰기 지연 시간
+* QoS클라우드 지연 시간
+* QoSClusterInterconnect 지연 시간
+* 기타MBps
+* QoSCop 대기 시간
+* QoSDBladeLatency
+* 이용
+* 읽기IOPS
+* MBps
+* 기타 IOPS
+* QoSPolicyGroupLatency
+* 읽기 MBps
+* QoSSyncSnapmirrorLatency
+* 쓰기IOPS
+
+
+====
+.<strong>개인 데이터 접근 제한에서 제거된 항목 목록: 자세히 알아보기</strong>
+[%collapsible]
+====
+Keystone Collector에서 *개인 데이터 제거* 옵션을 활성화하면 ONTAP 에 대한 다음 사용 정보가 제거됩니다.  이 옵션은 기본적으로 활성화되어 있습니다.
+
+* 클러스터 이름
+* 클러스터 위치
+* 클러스터 연락처
+* 노드 이름
+* 집계 이름
+* 볼륨 이름
+* QoSAdaptivePolicyGroup 이름
+* QoSPolicyGroup 이름
+* Vserver 이름
+* 스토리지 LUN 이름
+* 집계 이름
+* LogicalUnit 이름
+* SVM 이름
+* AIQUM인스턴스 IP
+* FlexClone
+* 원격 클러스터 이름
+
+
+====
+
+
+== StorageGRID 데이터 수집
+
+.<strong> StorageGRID 에 대해 수집된 사용 데이터: 자세히 알아보기</strong>
+[%collapsible]
+====
+다음 목록은 대표적인 샘플입니다. `Logical Data` StorageGRID 에 대해 수집됨:
+
+* StorageGRID ID
+* 계정 ID
+* 계정 이름
+* 계정 할당량 바이트
+* 버킷 이름
+* 버킷 객체 수
+* 버킷 데이터 바이트
+
+
+다음 목록은 대표적인 샘플입니다. `Physical Data` StorageGRID 에 대해 수집됨:
+
+* StorageGRID ID
+* 노드 ID
+* 사이트 ID
+* 사이트 이름
+* 사례
+* StorageGRID 스토리지 사용률 바이트
+* StorageGRID 스토리지 활용도 메타데이터 바이트
+
+
+====
+.<strong>개인 데이터 접근 제한에서 제거된 항목 목록: 자세히 알아보기</strong>
+[%collapsible]
+====
+Keystone Collector에서 *개인 데이터 제거* 옵션을 활성화하면 StorageGRID 에 대한 다음 사용 정보가 제거됩니다.  이 옵션은 기본적으로 활성화되어 있습니다.
+
+* 계정 이름
+* 버킷 이름
+* 사이트 이름
+* 인스턴스/노드 이름
+
+
+====
+
+
+== 원격 측정 데이터 수집
+
+.<strong> Keystone Collector VM에서 수집된 원격 측정 데이터: 자세히 알아보기</strong>
+[%collapsible]
+====
+다음 목록은 Keystone 시스템에서 수집된 원격 측정 데이터의 대표적인 샘플입니다.
+
+* 시스템 정보
++
+** 운영체제 이름
+** 운영 체제 버전
+** 운영 체제 ID
+** 시스템 호스트 이름
+** 시스템 기본 IP 주소
+
+
+* 시스템 리소스 사용량
++
+** 시스템 가동 시간
+** CPU 코어 수
+** 시스템 부하(1분, 5분, 15분)
+** 총 메모리
+** 여유 메모리
+** 사용 가능한 메모리
+** 공유 메모리
+** 버퍼 메모리
+** 캐시된 메모리
+** 총 스왑
+** 무료 교환
+** 캐시된 스왑
+** 디스크 파일 시스템 이름
+** 디스크 크기
+** 사용된 디스크
+** 디스크 사용 가능
+** 디스크 사용률
+** 디스크 마운트 지점
+
+
+* 설치된 패키지
+* 수집기 구성
+* 서비스 로그
++
+** Keystone 서비스의 서비스 로그
+
+
+
+
+====

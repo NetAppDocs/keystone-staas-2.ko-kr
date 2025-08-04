@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: installation/linux-installation.html 
+keywords: Linux installation Keystone, Linux Collector installation 
+summary: YUM 소프트웨어 저장소에서 Keystone Collector 소프트웨어를 설치합니다. 
+---
+= Linux 시스템에 Keystone Collector 설치
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+RPM이나 Debian 패키지를 사용하여 Linux 서버에 Keystone Collector 소프트웨어를 설치할 수 있습니다.  Linux 배포판에 따라 설치 단계를 따르세요.
+
+[role="tabbed-block"]
+====
+.RPM 사용
+--
+. Keystone Collector 서버에 SSH하고 elevate합니다. `root` 특권.
+. Keystone 공개 서명을 가져옵니다.
+`# rpm --import https://keystone.netapp.com/repo/RPM-GPG-NetApp-Keystone-20221101`
+. RPM 데이터베이스에서 Keystone Billing Platform의 지문을 확인하여 올바른 공개 인증서가 가져왔는지 확인하세요.
+`# rpm -qa gpg-pubkey --qf '%{Description}'|gpg --show-keys --fingerprint` 올바른 지문은 다음과 같습니다.
+`90B3 83AF E07B 658A 6058 5B4E 76C2 45E4 33B6 C17D`
+. 다운로드 `keystonerepo.rpm` 파일:
+`curl -O https://keystone.netapp.com/repo/keystonerepo.rpm`
+. 파일의 진위성을 확인하세요:
+`rpm --checksig -v keystonerepo.rpm` 진짜 파일의 서명은 다음과 같습니다.
+`Header V4 RSA/SHA512 Signature, key ID 33b6c17d: OK`
+. YUM 소프트웨어 저장소 파일을 설치하세요.
+`# yum install keystonerepo.rpm`
+. Keystone 저장소가 설치되면 YUM 패키지 관리자를 통해 keystone-collector 패키지를 설치합니다.
++
+`# yum install keystone-collector`
+
++
+Red Hat Enterprise Linux 9의 경우 다음 명령을 실행하여 keystone-collector 패키지를 설치합니다.
+`# yum install keystone-collector-rhel9`
+
+
+
+--
+.데비안 사용
+--
+. Keystone Collector 서버에 SSH하고 elevate합니다. `root` 특권.
+`sudo su`
+. 다운로드 `keystone-sw-repo.deb` 파일:
+`curl -O https://keystone.netapp.com/downloads/keystone-sw-repo.deb`
+. Keystone 소프트웨어 저장소 파일을 설치하세요:
+`# dpkg -i keystone-sw-repo.deb`
+. 패키지 목록을 업데이트하세요:
+`# apt-get update`
+. Keystone repo가 설치되면 keystone-collector 패키지를 설치하세요.
+`# apt-get install keystone-collector`
+
+
+--
+====
+
+NOTE: 설치가 완료되면 Keystone Collector Management Terminal User Interface(TUI) 유틸리티를 사용하여 구성 및 모니터링 활동을 수행할 수 있습니다.  Enter 키와 화살표 키 등 다양한 키보드 컨트롤을 사용하여 옵션을 선택하고 이 TUI를 탐색할 수 있습니다.  보다link:../installation/configuration.html["Keystone Collector 구성"] 그리고link:../installation/monitor-health.html["시스템 상태 모니터링"] 정보를 위해.

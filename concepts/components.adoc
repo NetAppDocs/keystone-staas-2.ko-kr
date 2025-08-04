@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: concepts/components.html 
+keywords: infrastructure component, deployment requirement, installation requirement 
+summary: 사용자 환경에서 NetApp Keystone STaaS 서비스를 활성화하는 데 필요한 구성 요소에 대해 알아보세요. 
+---
+= 배포에 필요한 구성 요소
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 환경에서 NetApp Keystone STaaS 서비스를 사용하려면 여러 구성 요소가 필요합니다.  시작하기 전에 이러한 구성 요소에 대한 세부 정보를 검토해야 합니다.
+
+
+
+== 사이트 요구 사항
+
+여기서는 공간, 랙, PDU, 전력, 냉각과 같은 사이트별 요구 사항이 몇 가지 있으며, 추가적인 네트워크 및 보안 요구 사항도 설명합니다.
+
+
+
+=== 공간
+
+Keystone 인프라 장비를 호스팅할 바닥 공간(고객 제공).  NetApp 최종 구성을 기반으로 가중치 사양을 제공합니다.
+
+
+
+=== 랙
+
+고객이 직접 운영하는 서비스에는 4개의 포스트 랙이 포함됩니다(고객이 제공).  NetApp 에서 운영하는 서비스에서는 요구 사항에 따라 NetApp 이나 고객이 랙을 제공할 수 있습니다.  NetApp 42개의 깊은 랙을 제공합니다.
+
+
+
+=== PDU
+
+두 개의 별도 보호 회로에 연결된 전원 분배 장치(PDU)에 충분한 C13 콘센트를 제공해야 합니다.  고객이 운영하는 서비스에서는 어떤 경우에는 C19 매장이 필요합니다.  NetApp 에서 운영하는 서비스에서 NetApp 이나 고객이 요구 사항에 따라 PDU를 제공할 수 있습니다.
+
+
+
+=== 힘
+
+필요한 전력을 공급해야 합니다.  NetApp 최종 구성을 기반으로 200V 정격(일반 A, 최대 A, 일반 W, 최대 W, 전원 코드 유형 및 수량)을 기반으로 전력 요구 사항 사양을 제공합니다.  모든 구성 요소에는 중복 전원 공급 장치가 있습니다.  NetApp 캐비닛 내부 전원 코드를 제공합니다.
+
+
+
+=== 냉각
+
+NetApp 최종 구성 및 요구 사항을 기반으로 냉각 요구 사항 사양(일반 BTU, 최대 BTU)을 제공할 수 있습니다.
+
+
+
+=== 가상 머신
+
+Keystone Collector와 ITOM Collector를 배포하려면 가상 머신이 필요합니다.  설치 전제 조건은 다음을 참조하세요.link:../installation/installation-overview.html["Keystone Collector 설치 가이드"] 그리고link:../installation/itom-prereqs.html["ITOM Collector 설치 요구 사항"] .  다른 요구 사항은 배포 중에 공유됩니다.
+
+
+
+=== 배포 옵션
+
+Keystone Collector는 다음 방법을 통해 배포할 수 있습니다.
+
+* VMware OVA 템플릿(VMware vCenter Server 6.7 이상 필요)
+* 고객은 다음 운영 체제 중 하나를 실행하는 Linux 서버를 제공합니다: Debian 12, Red Hat Enterprise Linux 8.6 이상 8.x 버전 또는 CentOS 7(기존 환경에만 해당).  Keystone 소프트웨어는 다음을 사용하여 설치됩니다. `.deb` 또는 `.rpm` 패키지는 Linux 배포판에 따라 다릅니다.
+
+
+ITOM Collector는 다음 방법을 통해 배포할 수 있습니다.
+
+* 고객은 Debian 12, Ubuntu 20.04 LTS, Red Hat Enterprise Linux(RHEL) 8.x, Amazon Linux 2023 또는 최신 버전을 실행하는 Linux 서버를 제공합니다.
+* 고객은 Windows Server 2016 이상 버전을 실행하는 Windows 서버를 제공합니다.
++
+
+TIP: 권장되는 운영 체제는 Debian 12, Windows Server 2016 또는 최신 버전입니다.
+
+
+
+
+
+=== 네트워킹
+
+_keystone.netapp.com_에 대한 아웃바운드 액세스는 Keystone Collector 및 AIOps 솔루션 게이트웨이의 운영 및 유지 관리에 필수적인 소프트웨어 업데이트 및 사용 데이터 업로드에 필요합니다.
+
+고객 요구 사항과 사용되는 스토리지 컨트롤러에 따라 NetApp 고객 사이트에서 10GB, 40GB, 100GB 연결을 제공할 수 있습니다.
+
+NetApp NetApp 에서 제공하는 인프라 장치에만 필요한 트랜시버를 제공합니다.  고객 장치에 필요한 트랜시버와 NetApp 에서 제공하는 Keystone 인프라 장치에 대한 케이블을 제공해야 합니다.
+
+
+
+== 원격 접속 요구 사항
+
+고객 데이터 센터나 고객 소유의 공동 배치 서비스에 설치된 스토리지 인프라와 Keystone 운영 센터 간에 네트워크 연결이 필요합니다.  고객은 컴퓨팅 및 가상 머신과 인터넷 서비스를 제공할 책임이 있습니다.  고객은 또한 내부 보안 정책에 따라 OS 패치(OVA 기반이 아닌 배포) 및 보안 강화에 대한 책임이 있습니다.  네트워크 설계는 보안 프로토콜을 기반으로 이루어져야 하며 방화벽 정책은 NetApp 과 고객 모두의 승인을 받아야 합니다.
+
+NetApp Keystone 고객에게 모니터링 및 청구와 같은 서비스를 제공하기 위해 모니터링 및 관리를 위해 설치된 하드웨어 및 소프트웨어 구성 요소에 액세스해야 합니다.  가장 일반적인 방법은 고객 네트워크에 가상 사설망(VPN) 연결을 설정하고 필요한 데이터에 액세스하는 것입니다.  고객이 새로운 서비스에 방화벽 포트를 여는 것으로 인해 발생하는 운영상의 복잡성을 극복하기 위해 모니터링 도구는 외부 연결을 시작합니다.  ITOM 모니터링 솔루션 및 Zuora와 같은 NetApp 클라우드 애플리케이션은 이 연결을 사용하여 각자의 서비스를 수행합니다.  이 방법은 이 서비스의 일부인 모니터링 구성 요소에 대한 액세스를 제공하면서도 방화벽 포트를 열지 않는다는 고객 요구 사항을 충족합니다.
