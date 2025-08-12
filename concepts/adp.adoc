@@ -25,7 +25,13 @@ Keystone 고급 데이터 보호 서비스는 데이터를 보조 사이트에 �
 
 MetroCluster 구성에서 소비량을 보는 방법에 대한 정보는 다음을 참조하세요.link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["고급 데이터 보호를 위한 참조 차트"] .
 
-추가 요금은 소스 데이터, 미러링된 사본, 미러링되지 않은 데이터를 포함하여 구독의 모든 용량에 적용됩니다.
+
+
+== 가격 이해
+
+고급 데이터 보호 추가 서비스 가격은 각 사이트의 약정 용량에 따라 결정됩니다.  이는 고급 데이터 보호 서비스의 실제 비용을 TiB당 $로 결정하는 데 도움이 됩니다. 추가 요금은 소스 데이터, 미러링된 사본, 미러링되지 않은 데이터를 포함하여 구독의 모든 용량에 적용됩니다.
+
+MetroCluster 구성의 경우 각 사이트마다 별도의 구독이 필요하며, 각 사이트에서 약정된 용량에 대한 요금이 독립적으로 부과됩니다.  청구에 대해 알아보려면 다음을 참조하세요.link:../concepts/misc-volume-billing.html#billing-for-advanced-data-protection["고급 데이터 보호에 대한 청구"] .
 
 다음 사항에 유의하세요.
 
