@@ -27,7 +27,13 @@ Keystone 데이터를 포함하도록 AutoSupport 구성하기 전에 다음 사
 . 시스템 관리자 사용자로서 SSH를 사용하여 Keystone ONTAP 클러스터에 로그인합니다.  자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-ssh-task.html["SSH를 사용하여 클러스터에 액세스합니다."^] .
 . 로그 내용을 수정합니다.
 +
-** 일일 로그 내용을 수정하려면 다음 명령을 실행하세요.
+** ONTAP 9.16.1 이상의 경우 다음 명령을 실행하여 일일 로그 내용을 수정하세요.
++
+[source]
+----
+autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,object_store_server,san,raid,snapmirror -troubleshooting-additional wafl
+----
+** 이전 ONTAP 버전의 경우 다음 명령을 실행하여 일일 로그 내용을 수정하세요.
 +
 [source]
 ----

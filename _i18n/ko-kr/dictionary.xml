@@ -1074,7 +1074,6 @@
   <block id="0615b5bfa7b669de144331b512440192" category="inline-link">SSH를 사용하여 클러스터에 액세스합니다.</block>
   <block id="75637cd8fe530b3ca0a91d01f7a154b3" category="list-text">시스템 관리자 사용자로서 SSH를 사용하여 Keystone ONTAP 클러스터에 로그인합니다.  자세한 내용은 다음을 참조하세요.<block ref="72c78e462556b03d46e2f3029d4a0613" category="inline-link-rx"></block> .</block>
   <block id="001d654c5d010b25a953ace0dce0f14d" category="list-text">로그 내용을 수정합니다.</block>
-  <block id="a35e5b3497716ca18010e0be265afb3b" category="list-text">일일 로그 내용을 수정하려면 다음 명령을 실행하세요.</block>
   <block id="9060a638913c522309cdbab6919eef2b" category="list-text">주간 로그 내용을 수정하려면 다음 명령을 실행하세요.</block>
   <block id="20c41bcd9366cdbd961d6554489ea863" category="inline-link">시스템 노드 자동 지원 트리거 수정</block>
   <block id="5f6d98c1ed4256fab45f6c20e637744e" category="paragraph">이 명령에 대한 자세한 내용은 다음을 참조하세요.<block ref="700e80291e0b2dbcd3452a610925a1ef" category="inline-link-rx"></block> .</block>
@@ -2037,7 +2036,6 @@
   <block id="4d14bebdede2f7719e5f532aa0038aae" category="list-text">Digital Advisor 왼쪽 탐색 창에서 *일반 &gt; Keystone 구독 &gt; 볼륨 &gt; 볼륨 세부 정보*로 이동합니다.</block>
   <block id="12405cc60d2ee8aa60f147c5c605b8f2" category="paragraph">용량 사용량, 볼륨 유형, 클러스터, 집계 및 할당된 Keystone 성능 서비스 수준과 같은 볼륨의 표 목록을 볼 수 있습니다.  열 제목 옆에 있는 정보 아이콘에 마우스를 올려 놓으면 열을 스크롤하여 해당 열에 대한 자세한 정보를 알아볼 수 있습니다.  열별로 정렬하고 목록을 필터링하여 특정 정보를 볼 수 있습니다.</block>
   <block id="288b4e42b32faccce4a2d55e94593bd9" category="admonition">Keystone 버전 3에서는 QoS 정책이 적용되지 않습니다.</block>
-  <block id="1cedef25ccb6885eb8bfdc7660435962" category="paragraph">*열 숨기기/표시*를 사용하여 표에 표시되는 열을 추가하거나 제거할 수 있습니다.  기본적으로 *부서* 열을 제외한 모든 열이 선택되어 있습니다.  *부서* 열을 포함하여 모든 열을 선택하거나 선택 해제할 수 있으며, 기본 설정은 나중에 사용할 수 있도록 저장됩니다.  CSV 보고서를 다운로드할 때, *부서* 열 세부 정보는 선택한 경우에만 포함되고, 다른 열은 표에서의 선택 상태와 관계없이 표시됩니다.</block>
   <block id="af16b731bd6e35896b00c75d9acfb1d5" category="admonition">고급 데이터 보호 추가 서비스의 경우, MetroCluster 구성에서 볼륨이 기본 볼륨인지 미러 볼륨인지를 나타내는 추가 열이 나타납니다.  *노드 일련번호 복사* 버튼을 클릭하면 개별 노드 일련번호를 복사할 수 있습니다.</block>
   <block id="6c419bfae17b57a1883f78150d7fbdce" category="inline-image-macro">볼륨 세부 정보 탭</block>
   <block id="56e2246e0f7e12674e62ac0311a5600a" category="paragraph"><block ref="56e2246e0f7e12674e62ac0311a5600a" category="inline-image-macro-rx" type="image"></block></block>
@@ -2442,4 +2440,15 @@
   <block id="541d21d5ff884f1d0b139f95e569de26" category="paragraph">사이트 A와 사이트 B는 MetroCluster 구성으로 설정됩니다. 사용자가 사이트 A에 10TB 볼륨을 생성하면 사이트 B에도 동일한 10TB 볼륨이 생성됩니다. Keystone 각 사이트에서 10TB의 사용량을 식별하여 총 20TB가 증가했습니다. 시스템 관리자와 통합 관리자는 사이트 A에 10TB 볼륨이 생성되었다고 보고하지만, 사이트 B에는 10TB 볼륨이 생성되었다고 보고하지 않습니다.</block>
   <block id="079da252ccc5dbccc8de73980b3d636d" category="paragraph">표시된 94.21TiB의 소비량은 기본 구독의 사용량을 나타냅니다.  고급 데이터 보호가 별도의 구독을 통해 파트너 사이트 간에 소비를 분할한다는 점을 감안할 때, 이 차트는 기본 사이트 사용량만 보여줍니다.  고급 데이터 보호 추가 서비스의 가격에 대해 알아보려면 다음을 참조하세요.<block ref="e4b4611bcff3f9744cb4aede487c4fc5" category="inline-link-macro-rx"></block> .</block>
   <block id="eb80e5c63a486d3698858f87d747e461" category="paragraph">Keystone 버전 3(v3)을 구독하려면 Keystone 지원팀에 문의하세요. 자세한 내용은 다음을 참조하세요.<block ref="ba5860e7066469b734064f44e703aa5c" category="inline-link-macro-rx"></block> .</block>
+  <block id="7e8fe67b005603b496012796735f2d36" category="doc">새로운 열을 통해 향상된 논리적 사용 추적</block>
+  <block id="b79d3069a7b9ca9140a5c9b1bf2f8d81" category="paragraph">FabricPool 볼륨에 대한 Keystone 소비량 추적을 강화하기 위해 새로운 열인 '전체 발자국'이 추가되었습니다.</block>
+  <block id="729a65ff91860ad65935d125d788f643" category="list-text">* BlueXP 의 Keystone 대시보드 *: *자산* 탭의 *클러스터 볼륨* 탭에서 *총 설치 공간* 열을 볼 수 있습니다.</block>
+  <block id="61f4e69294ec080e5cb7bce32f2f8b99" category="list-text">* Digital Advisor*: *볼륨 및 개체* 탭의 *볼륨 세부 정보* 탭에서 *총 공간* 열을 볼 수 있습니다.</block>
+  <block id="610355e82f0e7cf01bdfa1df13985f3f" category="paragraph">이 열은 성능 및 콜드 계층의 데이터를 포함하여 FabricPool 계층화를 사용하는 볼륨의 총 논리적 설치 공간을 표시하므로 Keystone 소비량을 정확하게 계산할 수 있습니다.</block>
+  <block id="bff820430728f0b409c26641dc8ddd41" category="list-text">ONTAP 9.16.1 이상의 경우 다음 명령을 실행하여 일일 로그 내용을 수정하세요.</block>
+  <block id="63af57ffe551ed93c0576ba741b36e47" category="list-text">이전 ONTAP 버전의 경우 다음 명령을 실행하여 일일 로그 내용을 수정하세요.</block>
+  <block id="8e65b1fa60d467c8850acfb3f1d1b8b9" category="paragraph">*열 숨기기/표시*를 사용하여 표에 표시되는 열을 추가하거나 제거할 수 있습니다. 기본적으로 표에는 이전에 저장된 열 기본 설정이 표시됩니다.  *부서* 또는 *총 면적* 열과 같이 새로 추가된 열은 기본적으로 숨겨져 있으며 표에 나타나려면 수동으로 선택해야 합니다.  원하는 열을 선택하거나 선택 해제할 수 있으며, 기본 설정은 나중에 사용할 수 있도록 저장됩니다.  CSV 보고서를 다운로드하면 표시 기본 설정에 관계없이 사용 가능한 모든 열이 내보내기에 포함됩니다.</block>
+  <block id="56a9fe5a3d171069cb125956f6186c86" category="paragraph">Digital Advisor 대시보드에서 MetroCluster 구성으로 구성된 구독의 소비 추세 차트에서 버스트 임계값 선이 누락되어 잘못된 *버스트 한도 초과* 상태가 표시됩니다.</block>
+  <block id="8d317448388884cae15b07e53f9c9fbc" category="paragraph">2025년 8월 28일</block>
+  <block id="b8d454c9414aa4b52ad019b0311711b5" category="section-title">2025년 8월 28일</block>
 </blocks>
