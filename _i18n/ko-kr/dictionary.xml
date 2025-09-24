@@ -2445,9 +2445,7 @@
   <block id="d540a0a7aa0f09414e542ffabc6300c6" category="list-text">시스템 생성 알림과 사용자 정의 알림(용량 사용 및 구독 만료)을 포함한 활성 알림을 보고 해결합니다.</block>
   <block id="64d4cc394badd0b54b5b74f5080233c6" category="list-text">용량 사용 및 구독 만료 이벤트를 추적하기 위해 알림 모니터를 만듭니다.</block>
   <block id="fad96b4b3d3badf81c42f03f5e3e79f9" category="inline-link-macro">알림 및 모니터 보기 및 관리</block>
-  <block id="cdd57c5e351290faba63a64f9aeaaa00" category="paragraph">자세한 내용은 다음을 참조하세요.<block ref="54a7920301641a95eb19ac46b9860916" category="inline-link-macro-rx"></block> .</block>
   <block id="bcf269fdba28fb16246a22e167483e0c" category="section-title">간소화된 성능 서비스 수준 보기</block>
-  <block id="d5361f65bad1a0cefb26442a03e3f1a3" category="paragraph">*구독* 탭에서 별도 탭에서 확장 가능한 보기로 이동된 성능 서비스 수준 정보를 볼 수 있습니다. 각 구독에 대한 만료일을 보려면 *만료일* 열 옆에 있는 아래쪽 화살표를 클릭하세요. 자세한 내용은 다음을 참조하세요.<block ref="c9175061cd37da451a004ee428397f08" category="inline-link-macro-rx"></block> .</block>
   <block id="1c560ebcd3a4417c966fc32410160aad" category="list-text"><block ref="1c560ebcd3a4417c966fc32410160aad" category="inline-link-macro-rx"></block></block>
   <block id="f1725014f45852c6d29865ed1732954a" category="paragraph">선택한 시간 범위를 기준으로 각 성과 서비스 수준에 대한 과거 소비 데이터가 선 그래프로 표시됩니다. Keystone 구독이 수정되거나 갱신되는 경우 시작 날짜를 이전 날짜로 설정하여 과거 소비 데이터를 볼 수 있습니다.</block>
   <block id="59bf2678f53f6a44de56bb54540c62f2" category="summary">모니터링 탭을 사용하여 Keystone 구독에 대한 알림 모니터를 보고 생성합니다.</block>
@@ -2524,4 +2522,6 @@
   <block id="18d49dfd26fc514adaab2c9799dd5201" category="paragraph">용량 사용량, 구독 만료 상태, 해결되지 않은 알림 등의 주요 지표를 볼 수 있습니다. 다음 세부 정보는 표에서 확인할 수 있습니다.</block>
   <block id="49ee8cd124ac86a74b0e8df79ea84356" category="admonition">*만료일* 열 옆에 있는 아래쪽 화살표를 클릭하면 각 구독에 대한 성능 서비스 수준 정보를 볼 수 있습니다. 여기에는 현재 사용량, 약정 용량, 프로비저닝된 용량, 버스트 용량, 사용 가능한 용량을 포함한 자세한 용량 정보가 표시됩니다.</block>
   <block id="7438fabae28e88c43c70139fd85c992a" category="section-title">2025년 9월 22일</block>
+  <block id="6ec83b09ce0b5d8f0d9c7b17070806de" category="paragraph">자세한 내용은 다음을 참조하세요.<block ref="93800fd762d6a0a51a66ae4ac582dd31" category="inline-link-macro-rx"></block> .</block>
+  <block id="93399fd7eb4f5bbac36222146d63b57a" category="paragraph">*구독* 탭에서 별도 탭에서 확장 가능한 보기로 이동된 성능 서비스 수준 정보를 볼 수 있습니다. 각 구독에 대한 만료일을 보려면 *만료일* 열 옆에 있는 아래쪽 화살표를 클릭하세요. 자세한 내용은 다음을 참조하세요.<block ref="98b73336a034e0a595056d3614a31660" category="inline-link-macro-rx"></block> .</block>
 </blocks>
