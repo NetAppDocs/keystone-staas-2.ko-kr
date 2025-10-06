@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: integrations/dashboard-access.html 
-keywords: Keystone, Digital Advisor, keystone-aiq, aiq, BlueXP, Keystone dashboard, Keystone subscriptions 
-summary: NetApp Keystone STaaS 구독자는 NetApp BlueXP 또는 Digital Advisor 통해 Keystone 대시보드에 액세스할 수 있습니다. 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, BlueXP, Keystone dashboard, Keystone subscriptions, NetApp Console, Console 
+summary: NetApp Keystone STaaS 구독자는 NetApp Console 또는 Digital Advisor 통해 Keystone 대시보드에 액세스할 수 있습니다. 
 ---
 = Keystone 대시보드 시작하기
 :hardbreaks:
@@ -14,22 +14,22 @@ summary: NetApp Keystone STaaS 구독자는 NetApp BlueXP 또는 Digital Advisor
 
 
 [role="lead"]
-NetApp Keystone 서비스에 가입한 후 NetApp BlueXP 또는 Digital Advisor 통해 Keystone 대시보드에 액세스할 수 있습니다.
+NetApp Keystone 서비스에 가입한 후 NetApp Console이나 Digital Advisor 통해 Keystone 대시보드에 액세스할 수 있습니다.
 
 [role="tabbed-block"]
 ====
-.BlueXP
+.NetApp 콘솔
 --
-BlueXP 에 로그인하려면 NetApp 지원 사이트 자격 증명을 사용하거나 이메일과 비밀번호를 사용하여 BlueXP 에 가입할 수 있습니다. 자세히 알아보세요 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["BlueXP 에 로그인"^] .
+NetApp 지원 사이트 자격 증명을 사용하여 콘솔에 로그인하거나 이메일과 비밀번호를 사용하여 NetApp 클라우드 로그인에 가입하세요. 자세한 내용은 다음을 참조하십시오. link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["콘솔에 로그인"^] .
 
 .단계
-. BlueXP 에 로그인하세요.
-. BlueXP 왼쪽 탐색 메뉴에서 *저장소 > Keystone*을 선택합니다.
+. 콘솔에 로그인합니다.
+. 콘솔 왼쪽 탐색 메뉴에서 *저장소 > Keystone*을 선택합니다.
 +
 Keystone 대시보드가 나타납니다.
 
 +
-image:discover-subscriptions-1.png["Keystone 대시보드 페이지"]
+image:discover-subscriptions-2.png["Keystone 대시보드 페이지"]
 
 +
 
@@ -54,7 +54,7 @@ Digital Advisor 대시보드의 * Keystone 구독* 위젯에서 구독 및 사�
 ====
 *관련 정보*
 
-* link:../integrations/keystone-bluexp.html["BlueXP 의 Keystone 대시보드"]
+* link:../integrations/keystone-console.html["NetApp 콘솔의 Keystone 대시보드"]
 * link:..//integrations/keystone-aiq.html["Digital Advisor 의 Keystone 대시보드"]
 * link:../integrations/subscriptions-tab.html["구독 세부 정보 보기"]
 

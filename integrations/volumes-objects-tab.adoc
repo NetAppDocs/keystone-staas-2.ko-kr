@@ -16,7 +16,7 @@ summary: 볼륨 또는 개체 스토리지 수준에서 용량 세부 정보를 
 [role="lead"]
 볼륨 또는 개체 스토리지 수준에서 용량 세부 정보를 보려면 Digital Advisor 의 *볼륨 및 개체* 탭으로 이동하세요.  StorageGRID 의 경우 이 탭을 사용하여 개체 스토리지 환경의 개별 노드별 사용량을 읽을 수 있습니다.
 
-이러한 세부 정보를 보려면 BlueXP 의 *자산* 탭을 참조하세요.  특정 Keystone STaaS 구독에 대한 세부 정보를 보려면 다음을 참조하세요.link:../integrations/assets-tab.html["Keystone 구독과 관련된 자산 보기"] .  여러 Keystone 구독에 대한 세부 정보를 보려면 다음을 참조하세요.link:../integrations/assets.html["Keystone 구독 전반에 걸쳐 자산 보기"] .
+이러한 세부 정보를 보려면 NetApp 콘솔의 *자산* 페이지를 참조하세요. 특정 Keystone STaaS 구독에 대한 세부 정보를 보려면 다음을 참조하세요.link:../integrations/assets-tab.html["Keystone 구독과 관련된 자산 보기"] . 여러 Keystone 구독에 대한 세부 정보를 보려면 다음을 참조하세요.link:../integrations/assets.html["Keystone 구독 전반에 걸쳐 자산 보기"] .
 
 
 NOTE: 이 탭의 제목은 사이트의 배포 특성에 따라 달라집니다.  ONTAP 과 개체 스토리지가 모두 있는 경우 탭 제목이 *볼륨 및 개체*로 표시됩니다.  ONTAP 의 경우에만 이름이 *Volumes*로 표시됩니다.  StorageGRID 개체 스토리지의 경우 *개체* 탭을 볼 수 있습니다.
@@ -37,7 +37,7 @@ NOTE: 이 탭의 제목은 사이트의 배포 특성에 따라 달라집니다.
 선택한 Keystone STaaS 구독에 대해 총 볼륨 수, QoS 준수 상태, 보호된 볼륨 수, 모든 볼륨에서 약정된 총 용량, 사용된 총 용량, 사용 가능한 용량을 확인할 수 있습니다.  비준수 볼륨이나 보호 볼륨의 수를 클릭하면 *볼륨 세부 정보* 탭으로 이동합니다. 여기서 선택 사항에 따라 비준수 볼륨이나 보호 볼륨을 보여 주는 필터링된 목록을 볼 수 있습니다.
 
 +
-image:volume-summary-2.png["볼륨 요약 탭"]
+image:volume-summary-3.png["볼륨 요약 탭"]
 
 
 
@@ -61,7 +61,7 @@ NOTE: Keystone 버전 3에서는 QoS 정책이 적용되지 않습니다.
 NOTE: 고급 데이터 보호 추가 서비스의 경우, MetroCluster 구성에서 볼륨이 기본 볼륨인지 미러 볼륨인지를 나타내는 추가 열이 나타납니다.  *노드 일련번호 복사* 버튼을 클릭하면 개별 노드 일련번호를 복사할 수 있습니다.
 
 +
-image:volume-details-3.png["볼륨 세부 정보 탭"]
+image:volume-details-4.png["볼륨 세부 정보 탭"]
 
 
 
