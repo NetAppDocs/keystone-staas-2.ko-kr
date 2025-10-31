@@ -22,15 +22,15 @@ RPM이나 Debian 패키지를 사용하여 Linux 서버에 Keystone Collector �
 --
 . Keystone Collector 서버에 SSH하고 elevate합니다. `root` 특권.
 . Keystone 공개 서명을 가져옵니다.
-`# rpm --import https://keystone.netapp.com/repo/RPM-GPG-NetApp-Keystone-20221101`
+`# rpm --import https://keystone.netapp.com/repo1/RPM-GPG-NetApp-Keystone-20251020`
 . RPM 데이터베이스에서 Keystone Billing Platform의 지문을 확인하여 올바른 공개 인증서가 가져왔는지 확인하세요.
 `# rpm -qa gpg-pubkey --qf '%{Description}'|gpg --show-keys --fingerprint` 올바른 지문은 다음과 같습니다.
-`90B3 83AF E07B 658A 6058 5B4E 76C2 45E4 33B6 C17D`
+`9297 0DB6 0867 22E7 7646 E400 4493 5CBB C9E9 FEDC`
 . 다운로드 `keystonerepo.rpm` 파일:
-`curl -O https://keystone.netapp.com/repo/keystonerepo.rpm`
-. 파일의 진위성을 확인하세요:
+`curl -O https://keystone.netapp.com/repo1/keystonerepo.rpm`
+. 파일의 진위 여부를 확인하세요.
 `rpm --checksig -v keystonerepo.rpm` 진짜 파일의 서명은 다음과 같습니다.
-`Header V4 RSA/SHA512 Signature, key ID 33b6c17d: OK`
+`Header V4 RSA/SHA512 Signature, key ID c9e9fedc: OK`
 . YUM 소프트웨어 저장소 파일을 설치하세요.
 `# yum install keystonerepo.rpm`
 . Keystone 저장소가 설치되면 YUM 패키지 관리자를 통해 keystone-collector 패키지를 설치합니다.
