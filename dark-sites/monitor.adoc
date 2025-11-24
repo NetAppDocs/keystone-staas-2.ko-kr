@@ -52,5 +52,5 @@ image:dark-site-generate-support-bundle-1.png["지원 번들 생성"]
 +
 이 프로세스는 다음을 생성합니다. `tar` 문제 해결을 위해 NetApp 과 공유할 수 있는 언급된 위치에 패키지가 있습니다.
 
-. 파일을 다운로드한 후 Keystone ServiceNow 지원 티켓에 첨부할 수 있습니다.  티켓 발행에 대한 정보는 다음을 참조하세요.link:../concepts/gssc.html["서비스 요청 생성"] .
+. 파일을 다운로드한 후 Keystone ServiceNow 지원 티켓에 첨부할 수 있습니다. 티켓 발행에 대한 정보는 다음을 참조하세요. link:../concepts/support-services.html["서비스 요청 생성"].
 
