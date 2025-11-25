@@ -57,4 +57,4 @@ image:alert-aiq-3.png["알리다"]
 
 AQoS 정책에 대한 정보는 다음을 참조하세요.link:../concepts/qos.html["적응형 QoS"] .
 
-이러한 메시지에 대한 자세한 내용은 NetApp Keystone 지원팀에 문의하세요.  서비스 요청 제기에 대한 정보는 다음을 참조하세요.link:../concepts/gssc.html#generating-service-requests["서비스 요청 생성"] .
+이러한 메시지에 대한 자세한 내용은 NetApp Keystone 지원팀에 문의하세요. 서비스 요청 제기에 대한 정보는 다음을 참조하세요. link:../concepts/support-services.html#generating-service-requests["서비스 요청 생성"].
