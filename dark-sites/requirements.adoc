@@ -20,7 +20,7 @@ summary: '인터넷 접속이 불가능한 환경(다크 사이트 또는 프라
 
 == VMware vSphere에 대한 요구 사항
 
-* 운영 체제: VMware vCenter Server 및 ESXi 6.7 이상
+* 운영 체제: VMware vCenter Server 및 ESXi 8.0 이상
 * 코어: 1 CPU
 * 램: 2GB
 * 디스크 공간: 20GB vDisk
