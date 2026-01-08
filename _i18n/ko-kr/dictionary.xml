@@ -1461,7 +1461,6 @@
   <block id="8dff4f66fbdc44d35cadc9cf566cab06" category="paragraph">동일한 서버에는 다음과 같은 타사 패키지도 있어야 합니다.</block>
   <block id="8a43eb05c3b74f093be84dcedec105e4" category="list-text">포드맨(POD 매니저)</block>
   <block id="e284374909d82a81c5150b7908e00147" category="list-text">만성</block>
-  <block id="3c048c264642c17c1d0bbd50b9e23bfe" category="list-text">파이썬 3(3.6.8~3.9.13)</block>
   <block id="9ce62eb0f672e21ccd91e690812cac59" category="list-title">Keystone Collector 서버 VM:</block>
   <block id="3cd8ee624224889231554d68f6c0f471" category="list-text">코어: 2개의 CPU</block>
   <block id="729c0bdf36ec5a81531eff6e6786c89d" category="list-text">RAM: 4GB RAM</block>
@@ -2620,4 +2619,5 @@
   <block id="7a29351a5aff62fec009044b13aad77f" category="paragraph">소비량이 허용된 버스트 한도 내에 있음에도 불구하고 구독이 Digital Advisor 대시보드에서 *버스트 한도 초과* 상태로 잘못 표시됩니다.</block>
   <block id="81899b5a6230dd4cf7e0bff4dbc71dfb" category="paragraph">2025년 12월 08일</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025년 12월 8일</block>
+  <block id="ee53a2d144b153a8ad44855abe0429a8" category="list-text">파이썬 3(3.9.14~3.11.8)</block>
 </blocks>
