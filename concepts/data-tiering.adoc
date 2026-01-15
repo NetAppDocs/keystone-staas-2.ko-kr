@@ -4,7 +4,7 @@ permalink: concepts/data-tiering.html
 keywords: add-on services, add-on, data tiering 
 summary: 데이터 계층화 추가 서비스는 사용 빈도가 낮은 데이터를 식별하여 지원되는 스토리지에 계층화합니다. 
 ---
-= 데이터 계층화에 대해 알아보세요
+= Keystone 용 데이터 계층화 추가 서비스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: concepts/burst-consumption-billing.html
 keywords: burst consumption billing 
 summary: Keystone STaaS 요금은 구독에 약정된 용량 외에 사용자가 소비하는 용량인 버스트 용량을 기준으로 청구됩니다. 
 ---
-= 버스트 소비량에 따른 청구
+= Keystone 버스트 사용량 청구 방식을 이해하세요.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

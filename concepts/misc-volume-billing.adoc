@@ -4,7 +4,7 @@ permalink: concepts/misc-volume-billing.html
 keywords: Billing and miscellaneous scenarios 
 summary: 복제된 볼륨, 고급 데이터 보호 등 특정 구성에 대한 Keystone 청구에 대해 알아보세요. 
 ---
-= Keystone 청구에 대한 다양한 시나리오
+= 특정 볼륨 구성에 대한 Keystone 청구 방식에 대해 알아보세요.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
