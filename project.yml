@@ -117,6 +117,8 @@ sidebar:
         url: "/integrations/consumption-tab.html"
       - title: 구독 일정 보기
         url: "/integrations/subscription-timeline.html"
+      - title: MetroCluster 구독 사용량 및 상태 보기
+        url: "/integrations/adp-tab.html"
     - title: 자산 보기
       entries:
       - title: 구독과 관련된 자산 보기
@@ -129,8 +131,6 @@ sidebar:
         url: "/integrations/monitoring-alerts.html"
       - title: 알림 모니터 보기 및 생성
         url: "/integrations/monitoring-alert-monitors.html"
-    - title: 구독 수정
-      url: "/integrations/modify-subscription.html"
     - title: 서비스 요청 보기
       url: "/integrations/administration-tab.html"
     - title: 볼륨 및 개체 스토리지 세부 정보 보기
