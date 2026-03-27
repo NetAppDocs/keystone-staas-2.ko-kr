@@ -1608,7 +1608,6 @@
   <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">자세한 내용을 보고 싶은 필수 구독을 선택하세요.  기본적으로 계정 이름의 첫 번째 구독이 선택됩니다.</block>
   <block id="cf9f1bd8f983088dfce001e6e73d8b32" category="list-text">과거 데이터를 보고 용량 사용 추세를 분석하려면 *소비 추세*를 선택하세요.</block>
   <block id="033251cc6647cf14147fe08683c5db5c" category="admonition">청구서가 생성된 과거 버스트 사용 데이터를 보려면 *청구된 발생 버스트*를 선택할 수 있습니다.  이 데이터를 사용하면 송장에 반영된 청구 사용량을 분석할 수 있습니다.  자세한 내용은 다음을 참조하세요.<block ref="7f44df2b1aebfeb61dadb6bb658158eb" category="inline-link-macro-rx"></block> .</block>
-  <block id="f4c8dae91522d3ec93e26aff56248527" category="list-text">*시작 날짜* 및 *종료 날짜* 필드의 달력 아이콘에서 시간 범위를 선택합니다.  쿼리에 대한 날짜 범위를 선택하세요.  날짜 범위는 월 시작일 또는 구독 시작일부터 현재 날짜 또는 구독 종료일까지일 수 있습니다.  미래의 날짜를 선택할 수 없습니다.</block>
   <block id="7be5abac822defa8ec27d754113b604f" category="admonition">최적의 성능과 사용자 경험을 위해 쿼리 기간을 3개월로 제한하세요.</block>
   <block id="f5f016cc229596fc9a18ad3fe70b66dd" category="list-text">*자세히 보기*를 클릭하세요.  선택한 시간 범위를 기준으로 각 성과 서비스 수준에 대한 구독의 과거 소비 데이터가 표시됩니다.</block>
   <block id="c194747f3a506641453fdf3030d612f8" category="paragraph">막대형 차트는 성과 서비스 수준 이름과 해당 성과 서비스 수준에 대해 날짜 범위 동안 소비된 용량을 표시합니다.  수집 날짜와 시간은 차트 하단에 표시됩니다.  쿼리의 날짜 범위를 기준으로 사용 차트가 30개의 데이터 수집 지점 범위에 표시됩니다.  차트 위에 마우스 커서를 올려 놓으면 해당 데이터 수집 지점에서 커밋, 사용, 버스트 및 버스트 한도 초과 데이터 측면에서 사용량 세부 정보를 볼 수 있습니다.</block>
@@ -2704,4 +2703,6 @@
   <block id="f069bdb9199fd723b309497a4681eaa7" category="list-text">*메모 추가*: 알림에 메모를 추가할 수 있는 팝업 창이 열립니다.</block>
   <block id="70d995c2419f7d9aa988641d4312954f" category="list-text">*View*: 알림 ID를 선택했을 때와 동일한 상세 보기 화면을 엽니다.</block>
   <block id="8b06cde2817c964f7431fdcb3ffcf3f2" category="section-title">2026년 3월 2일</block>
+  <block id="c4a7223f29b332fc54d3573ee04a51a1" category="list-text">*시작 날짜* 및 *종료 날짜* 필드의 달력 아이콘에서 시간 범위를 선택합니다. 기본적으로 날짜 범위는 오늘부터 지난 30일입니다. 이 범위를 변경할 수 있지만 미래 날짜는 선택할 수 없습니다.</block>
+  <block id="9b6f9894a20aba8f70839ec910a9bee6" category="admonition">30일 미만의 날짜 범위를 선택하면 선택한 기간 동안 하루에 하나의 데이터 수집 지점만 차트에 표시됩니다. 예를 들어 4일 범위를 선택하면 30개가 아닌 4개의 데이터 수집 지점이 표시됩니다. 선택한 기간에 관계없이 차트 하단에는 날짜만 표시됩니다. 타임스탬프는 아래 설명된 확대 기능을 사용하여 차트를 확대할 때만 볼 수 있습니다.</block>
 </blocks>
