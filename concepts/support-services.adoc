@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/support-services.html 
 keywords: Keystone support, service request, support ticket 
-summary: 도움이 필요하면 NetApp Keystone 지원팀에 문의하세요. 
+summary: NetApp 지원 사이트를 이용하여 지원 사례를 생성하거나 Keystone 구독 관련 연락처 정보를 찾아보세요. 
 ---
 = Keystone 에 대한 도움말 받기
 :hardbreaks:
@@ -14,48 +14,53 @@ summary: 도움이 필요하면 NetApp Keystone 지원팀에 문의하세요.
 
 
 [role="lead"]
-NetApp Keystone 지원팀과 Keystone Success Manager(KSM)는 귀하의 Keystone 구독에 대한 서비스를 제공하는 일을 담당합니다.  도움이 필요하면 Keystone 지원팀에 문의하세요.
+NetApp은 Keystone 고객에게 운영 서비스를 제공합니다. 고객은 전담 Keystone 성공 관리자(KSM), 직접 지원 연락 옵션, ITOM 솔루션을 통한 사전 예방적 모니터링 서비스를 이용할 수 있습니다.
 
 
 
-== NetApp Keystone 지원
+== NetApp 지원 서비스
 
-NetApp NetApp Keystone 고객에게 원격으로 운영 서비스를 제공합니다.  이러한 서비스는 스토리지 관리 활동 전반에 걸쳐 다양한 운영 분야를 포괄합니다.  이러한 서비스에는 자산 및 구성 관리, 용량 및 성능 관리, 변경 관리, 이벤트, 사고 및 문제 관리, 서비스 요청 이행 및 보고가 포함됩니다.  NetApp 필요에 따라 통제 상태와 이를 뒷받침하는 증거를 보여줍니다.
+NetApp은 Keystone 고객에게 원격으로 운영 서비스를 제공합니다. 이러한 서비스는 자산 및 구성 관리, 용량 및 성능 관리, 변경 관리, 이벤트 및 사고 관리, 서비스 요청 처리, 보고 등 다양한 스토리지 관리 활동을 포괄합니다.
 
-
-
-== 추가 정보
-
-NetApp ITOM 모니터링 솔루션을 사용하여 NetApp Keystone 환경을 사전에 모니터링하고 연결하여 문제 해결을 수행합니다.
+.Keystone 성공 관리자
+담당 KSM(Keystone Service Manager)은 고객과 긴밀히 협력하여 Keystone 서비스를 관리하고 주간 또는 월간 청구 및 운영 보고서를 제공합니다. 구체적인 책임 사항은 NetApp Keystone 계약서에 명시되어 있습니다.
 
 
-NOTE: 파트너 운영 모델에서는 테넌트와 하위 테넌트의 서비스 요청이 파트너의 서비스 데스크에 할당됩니다.  파트너의 지원 도구는 ITOM 솔루션과 통합되어 있을 수 있습니다.
+
+== 지원 팀에 문의하십시오
+
+Keystone 구독에 문제가 발생하면 NSS 자격 증명을 사용하여 link:https://support.netapp.com["NetApp 지원 사이트"^]에 로그인하고 지원 사례를 생성하세요.
+
+NSS 로그인 정보가 없는 경우 link:https://mysupport.netapp.com/site/user/registration["계정 등록"^] 구독에 포함된 노드 중 하나의 일련 번호(SN)를 사용하십시오.
+
+스크린샷이 포함된 단계별 지침은 link:https://kb.netapp.com/nss/Support_Site/How_to_open_a_technical_support_case["기술 지원 사례를 여는 방법"^]을 참조하십시오.
+
+지원 담당자와 직접 통화하려면 다음 번호 중 하나로 전화하십시오.
+
+* 미국/캐나다: 888 463 8277
+* 유럽: 00 800 44 638277
+* 인도: 000 800 100 8948
+* 더 많은 글로벌 수치: link:https://www.netapp.com/company/contact-us/support/["https://www.netapp.com/company/contact-us/support/"^]
+
+
+
+
+== 지원 모니터링
+
+NetApp은 ITOM 모니터링 솔루션을 사용하여 제품 및 구독 서비스의 상태를 사전에 모니터링하고 문제 해결을 위해 NetApp Keystone 환경에 연결합니다.
+
+
+
+== 추가 리소스
 
 Keystone 서비스에 대한 자세한 내용은 다음을 참조하세요.
 
-* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
-* NetApp 제품 문서https://docs.netapp.com["https://docs.netapp.com"^]
+* link:https://www.netapp.com/us/solutions/keystone/index.aspx["NetApp Keystone"^]
+* link:https://docs.netapp.com["NetApp 제품 설명서"^]
 
 
+*관련 정보*
 
+* link:https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/How_to_Identify_Serial_Number_of_ONTAP_Platform["ONTAP 플랫폼의 일련 번호를 확인하는 방법"^]
+* link:https://kb.netapp.com/hybrid/StorageGRID/Maintenance/Which_serial_number_to_use_when_creating_StorageGRID_technical_support_case["StorageGRID 기술 지원 케이스를 생성할 때 사용할 일련 번호"^]
 
-== Keystone 지원 모니터링
-
-NetApp Keystone 지원팀은 고객의 제품 및 구독 서비스의 상태를 모니터링하고, 원격 지원을 제공하며, Keystone Success Manager와 협력합니다.
-
-.Keystone 성공 관리자
-Keystone Success Manager(KSM)는 Keystone 서비스에 관해 고객과 긴밀히 협력하며 주간 또는 월간 청구 및 운영 보고서에 대한 최신 정보를 제공합니다.  책임은 NetApp Keystone 계약에 명시되어 있습니다.
-
-
-
-== 서비스 요청 생성
-
-온보딩 중에 Netapp Keystone ServiceNow에 액세스하고 사용하기 위한 자격 증명이 제공된 경우 포털을 사용하여 Keystone 구독과 관련된 문제에 대한 서비스 요청을 생성할 수 있습니다.
-
-https://netappkeystone.service-now.com/csm[]
-
-서비스 요청을 제기하기 전에 시스템 세부 정보, 로그 및 관련 정보를 준비했는지 확인하세요.  서비스 요청을 제기하면 Keystone 지원팀이 지원 티켓을 받고 문제 해결을 위해 정보에 접근합니다.  ServiceNow 티켓을 따라가면 상태와 해결 방법을 알 수 있습니다.
-
-지원 번들 추가에 대한 정보는 다음을 참조하세요.link:../installation/monitor-health.html["지원 번들을 생성하고 수집합니다"] .
-
-에스컬레이션이 필요한 미해결 사건/티켓이 있는 경우 다음 주소 중 하나로 이메일을 보내주세요: keystone.services@netapp.com keystone.escalations@netapp.com
