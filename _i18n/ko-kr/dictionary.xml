@@ -2487,7 +2487,6 @@
   <block id="a91bb8801531bd0f94f5726293b87485" category="paragraph"><block ref="a91bb8801531bd0f94f5726293b87485" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa37f1bdab27c9577ff178edf4ff4fef" category="admonition">*보고서* 탭은 현재 Keystone 구독에서 사용할 수 없습니다.</block>
   <block id="2193640916b96caede95ed8f42c339e8" category="paragraph"><block ref="2193640916b96caede95ed8f42c339e8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bfad9751c60f0a457fcc252ae1a203b7" category="paragraph">이러한 메시지에 대한 자세한 내용은 NetApp Keystone 지원팀에 문의하세요. 서비스 요청 제기에 대한 정보는 다음을 참조하세요. <block ref="f97d063259ee0af881752dffb06b5bc4" category="inline-link-macro-rx"></block>.</block>
   <block id="3a51c5c35df88316b8d012c010e340f7" category="section-title">2025년 11월 24일</block>
   <block id="236430e108e8394ac19913076b10fb55" category="doc">누적 버스트 용량 레이블 이름이 변경되었습니다.</block>
   <block id="73ba7647571e18c30e8b5b930b7d7ffb" category="paragraph">*누적 버스트 용량* 라벨이 *누적 버스트*로 이름이 변경되었습니다.</block>
@@ -2737,4 +2736,5 @@
   <block id="9678bc25baa5d4e1d8060e89e70f72fc" category="list-text"><block ref="9678bc25baa5d4e1d8060e89e70f72fc" category="inline-link-macro-rx"></block></block>
   <block id="843e615119fedf23ac503dbdf746f02a" category="inline-link-macro">StorageGRID 기술 지원 케이스를 생성할 때 사용할 일련 번호</block>
   <block id="ce9d93de629e2074412aaee90a3a8db2" category="list-text"><block ref="ce9d93de629e2074412aaee90a3a8db2" category="inline-link-macro-rx"></block></block>
+  <block id="4923c6e833cc1911c8344d01efacf0cd" category="paragraph">NetApp Keystone 지원팀에 문의하여 이러한 메시지에 대한 자세한 내용을 확인하십시오. 서비스 요청 제출에 대한 자세한 내용은 <block ref="fa4c1fe482109028db7ac27dab34833d" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
 </blocks>
