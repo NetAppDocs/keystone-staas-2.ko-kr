@@ -5,15 +5,13 @@ keywords: pricing, billing introduction, Keystone billing
 summary: Keystone 유연하고 확장 가능한 소비 요구에 맞춰 사용량에 따른 지불 모델을 제공합니다. 
 ---
 = Keystone 청구 방식에 대해 알아보세요.
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
-
-'''
-sidebar: sidebar permalink: concepts/pricing.html keywords: pricing, Keystone 청구, 약정 용량, 사용 용량, 버스트 사용량, 청구 일정 요약: NetApp Keystone STaaS를 사용하면 약정한 용량에 대해서만 비용을 지불하고, 약정을 초과하여 사용한 부분에 대해서만 추가 비용을 지불합니다. 이 페이지에서는 스토리지 약정 가격 책정 방식부터 용량 측정 및 청구 방식, 청구서 발행 시점까지, 사용량에 따라 지불하는 방식의 모델이 어떻게 작동하는지 설명합니다. ---
-
-
-
-= Keystone 청구 방식에 대해 알아보세요.
 
 [role="lead"]
 NetApp Keystone STaaS를 사용하면 약정한 용량만큼만 지불하고, 초과 사용량에 대해서만 추가 비용을 지불합니다. 이 페이지에서는 스토리지 약정 가격 책정 방식, 용량 측정 및 청구 방식, 청구서 발행 시점 등 사용량 기반 요금 모델의 작동 방식을 설명합니다.
