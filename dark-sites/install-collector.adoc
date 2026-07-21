@@ -20,6 +20,7 @@ summary: 인터넷 접속이 불가능한 환경, 즉 _다크 사이트_ 또는 
 
 
 
+[[deploy-on-vmware-vsphere]]
 == VMware vSphere에 배포
 
 다음 단계를 따르세요.
@@ -30,6 +31,7 @@ summary: 인터넷 접속이 불가능한 환경, 즉 _다크 사이트_ 또는 
 
 
 
+[[install-on-linux]]
 == 리눅스에 설치
 
 Keystone Collector 소프트웨어는 Linux 배포판에 따라 제공된 .deb 또는 .rpm 파일을 사용하여 Linux 서버에 설치됩니다.

@@ -700,11 +700,6 @@
   <block id="38ee5c58ab48cb8a1b633c2aea7a1e45" category="list-text">특정 조건에 따라 약정된 용량을 줄일 수 있습니다.  자세한 내용은 다음을 참조하세요.<block ref="bce311488cda7b3fc83e86e7b3939fd8" category="inline-link-macro-rx"></block> .</block>
   <block id="5f961dc6311c34fa23cf40360afba9db" category="list-text">구독을 추가로 12개월 기간으로 갱신하는 경우를 제외하고는 구독 만료일 90일 전부터는 약정 용량을 늘릴 수 없습니다.</block>
   <block id="dd83b22a815febb6c6547eab078bbf30" category="section-title">소비 용량</block>
-  <block id="95ff7c62926d2ecbfa68d2cb55e84679" category="paragraph">소비 용량은 서비스에서 현재 소비되고 있는 용량(저장 용량의 TiB)을 말합니다.  다음의 합계입니다.</block>
-  <block id="bc1fb831529945409538850faa16026e" category="list-text">모든 인스턴스와 사용자 데이터 유형(복사본, 미러링된 사본, 버전 등)을 저장하는 데 사용되는 논리적 용량입니다.</block>
-  <block id="b2a0ad297e26236d750246160723aa4e" category="list-text">원본 볼륨 크기의 10%가 넘는 복제 볼륨을 저장하는 데 사용되는 논리적 용량입니다.</block>
-  <block id="93fcc6bc4dfbcffb60fef19d3e82a054" category="list-text">스냅샷 복사본의 차등 데이터를 저장하는 데 사용되는 물리적 용량입니다.</block>
-  <block id="92103b58e95f2c7bb6f6903f55f4e0ca" category="list-text">할당된 물리적 용량.</block>
   <block id="08d63a30cdbc798edef3e21cacda1ac2" category="section-title">버스트 용량</block>
   <block id="3be3c0e5a4c3f89e825b202394d2aaab" category="paragraph">NetApp Keystone 서비스를 사용하면 서비스 수준에서 약속된 용량 외에 추가 용량을 사용할 수 있습니다.  이를 버스트 용량 사용량이라고 합니다.</block>
   <block id="8bf4a89637b88a17fe1be4dad5d23488" category="paragraph">다음 사항에 유의하세요.</block>
@@ -902,7 +897,6 @@
   <block id="9bb097552337391bef04a8384c5c2779" category="summary">Keystone 시작하기 전에 ONTAP 클러스터와 StorageGRID 시스템이 몇 가지 요구 사항을 충족하는지 확인해야 합니다.</block>
   <block id="6d29d2542a6a2e3e81746082b1d99b07" category="list-title">소프트웨어 버전</block>
   <block id="c3ce6809be6bdc67ae978395484d0585" category="list-text">ONTAP 9.8 이상</block>
-  <block id="0cd22f9baa25202637cff789fe1dfe9f" category="list-text">Active IQ Unified Manager (Unified Manager) 9.10 이상</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
   <block id="b2a3bf9896e977dfd8243da5ea25ed44" category="paragraph">ONTAP 통해서만 사용 데이터를 수집하려는 경우 다음 요구 사항을 충족하세요.</block>
   <block id="3e53b7d63056b7201f19b650655aad66" category="list-text">ONTAP 9.8 이상이 구성되어 있는지 확인하세요.  새 클러스터 구성에 대한 자세한 내용은 다음 링크를 참조하세요.</block>
@@ -922,7 +916,6 @@
   <block id="da7599bcceca45d5f685a0c9ca169dd1" category="inline-link">ONTAP 계정 비밀번호 액세스 활성화</block>
   <block id="ce5996c36dc9e027cc9e9e6ac10b3c9f" category="list-text">"읽기 전용" 역할과 "http" 애플리케이션 유형을 가진 ONTAP 사용자를 생성하고, 비밀번호 인증을 활성화합니다.  인증에 대해 자세히 알아보려면 다음을 참조하세요.<block ref="ff30655b37a4a92ad3dccbb4dd39b63c" category="inline-link-rx"></block> .</block>
   <block id="6fccd3079eed02626646a383fcba9c32" category="paragraph">Active IQ Unified Manager 통해 사용 데이터를 수집하려면 다음 요구 사항을 충족해야 합니다.</block>
-  <block id="ad98fcce772f03d25a2b4758c7fbf35c" category="list-text">Unified Manager 9.10 이상이 구성되어 있는지 확인하세요.  Unified Manager 설치에 대한 자세한 내용은 다음 링크를 참조하세요.</block>
   <block id="d0b5d22f0f22d32554c2064ce1e75865" category="inline-link">VMware vSphere 시스템에 Unified Manager 설치</block>
   <block id="9893071aa012ae6b029eae73ae2be44e" category="list-text"><block ref="9893071aa012ae6b029eae73ae2be44e" category="inline-link-rx"></block></block>
   <block id="af5e840663cada43f534ae4ad3ceb289" category="inline-link">Linux 시스템에 Unified Manager 설치</block>
@@ -1749,7 +1742,6 @@
   <block id="7e147d47de92c4a609c07c4bb5e40f29" category="list-text">*청구 기간*: 구독의 청구 기간입니다.</block>
   <block id="15d3201050b72761174ef874891c70c2" category="list-text">*성능 서비스 수준*: 구독과 연관된 요금제의 수로, 각 요금제는 특정 성능 서비스 수준과 약정 용량에 해당합니다.</block>
   <block id="7977aee626f33c6d577f1efc799f2747" category="list-text">*최대 용량*: 구독 내에서 소비되는 최대 용량입니다.</block>
-  <block id="e0e64854d2f2c608544b01e8cc518243" category="list-text">*구독 만료까지 남은 일수*: 구독이 만료되기까지 남은 일수입니다.</block>
   <block id="e567b31e26c159f427dde0e64b05c3c2" category="admonition">열 선택기를 사용하여 표에 표시되는 열을 사용자 정의할 수 있습니다.<block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block> 상.  특정 필드와 열의 경우, 데이터에 대한 추가 정보를 제공하는 정보나 경고 아이콘, 도구 설명이 표시될 수 있습니다.</block>
   <block id="ed4d0852f1703e0820b9637850aeae85" category="paragraph">Digital Advisor 에서 구독을 보려면 다음 단계를 따르세요.</block>
   <block id="01bbb3898ca00363b1b5c84f5c112a6e" category="list-text">Digital Advisor 왼쪽 탐색 창에서 *일반 &gt; Keystone 구독 &gt; 구독*으로 이동합니다.</block>
@@ -2507,7 +2499,6 @@
   <block id="1e007e954fdd7587bcd939b10c21e650" category="list-text">Console에서 누적 버스트 청구 그래프를 통해 일일 데이터 사용량을 필터링할 수 있습니다. 자세한 내용은 <block ref="0cc16f2bbc32fd70c68f98b9b0b4296a" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="1b342e2d578a51d6b3d947da95fe0f10" category="paragraph">Console에서 누적 버스트 청구 그래프에서 청구 기간을 나타내는 막대를 선택하여 테이블을 필터링할 수 있습니다. 필터링하면 선택한 청구 기간 내의 일수만 표시됩니다. 전체 데이터 세트를 다시 보려면 *Clear filters* 옵션을 사용하십시오. 선택한 기간에 데이터가 없는 경우 데이터가 없음을 나타내는 메시지가 표시됩니다.</block>
   <block id="e6f9cff2e05b0c21bfa8eacbea1108b9" category="paragraph"><block ref="e6f9cff2e05b0c21bfa8eacbea1108b9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c4eab7429b9b42ab319272d31567f10b" category="paragraph"><block ref="c4eab7429b9b42ab319272d31567f10b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6331e16cef510e2a7170f77ace7d4d3c" category="list-text">*사용 유형*: 여러 Keystone 버전을 구독했을 수 있습니다. 성능 서비스 수준에 대한 요금제 규칙은 구독 버전에 따라 다를 수 있습니다. 이 열의 값을 보면 사용 유형이 프로비저닝된 사용량, 물리적 사용량 또는 논리적 사용량 중 어떤 기준으로 청구되는지 알 수 있습니다. 버전 1에 대한 자세한 내용은<block ref="d7848503560f6eda6c1c5b670f722092" category="inline-link-rx"></block>를 참조하십시오.</block>
   <block id="8c4ee08746e9d4d8b64596c87ac3fab1" category="inline-image-macro">확장 아이콘</block>
   <block id="b3aabf2706f0dd29444a14f90b5b670f" category="admonition">테이블 헤더의 아래쪽 화살표 <block ref="f41a012a2c49083e45aae37ff23f77bc" category="inline-image-macro-rx" type="image"></block>를 클릭하면 모든 구독을 확장하여 각 구독의 성능 서비스 수준 정보를 동시에 볼 수 있습니다. 여기에는 모든 구독에 대한 현재 사용량, 약정 용량, 프로비저닝된 용량, 버스트 용량 및 사용 가능한 용량을 포함한 자세한 용량 정보가 표시됩니다. 또는 개별 구독 행의 *만료일* 열 옆에 있는 아래쪽 화살표를 클릭하여 하나씩 확장할 수도 있습니다.</block>
@@ -2672,7 +2663,6 @@
   <block id="513ac101f78fa63747befb7f73414070" category="paragraph">NetApp은 ITOM 모니터링 솔루션을 사용하여 제품 및 구독 서비스의 상태를 사전에 모니터링하고 문제 해결을 위해 NetApp Keystone 환경에 연결합니다.</block>
   <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="section-title">추가 리소스</block>
   <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
-  <block id="07d64f85c46041387234eb4f1b2c6dda" category="list-text"><block ref="07d64f85c46041387234eb4f1b2c6dda" category="inline-link-macro-rx"></block></block>
   <block id="bc4fe2352063642d68529f2aa0ca7ca3" category="inline-link-macro">NetApp 제품 설명서</block>
   <block id="c4c9ecac280f54a5500192a9efb21c2b" category="list-text"><block ref="c4c9ecac280f54a5500192a9efb21c2b" category="inline-link-macro-rx"></block></block>
   <block id="417de6e21a96febf9dc5f6d95a18c845" category="inline-link-macro">ONTAP 플랫폼의 일련 번호를 확인하는 방법</block>
@@ -2775,4 +2765,30 @@
   <block id="b52a8fe5a68b65cd156fdbdd49db6e3f" category="paragraph"><block ref="b52a8fe5a68b65cd156fdbdd49db6e3f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="012c1fa51b2cce435780c63eb94ec4e8" category="paragraph">이 데이터를 사용하여 특정 날짜의 청구 내역이 정확한지 확인하고 구독 사용량에 따른 차감 금액을 대조해 볼 수 있습니다.</block>
   <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">2026년 6월 29일</block>
+  <block id="74cf60fbdf1e9979b4bc96c9e0974a6b" category="doc">구독 만료일 및 자동 갱신 상태 보기</block>
+  <block id="495b22b0bc55d3822a5ffc86d03d07c9" category="paragraph">구독 테이블(*Storage &gt; Keystone &gt; Subscriptions*)의 *Days to subscription expiry* 열에 이제 만료일 옆에 아이콘이 표시됩니다. 자동 갱신이 해제된 경우 아이콘 색상은 만료 임박도를 나타냅니다. 녹색은 120일 초과(&gt;120일), 주황색은 91~120일, 빨간색은 90일 미만(&lt;90일), 회색은 만료됨을 의미합니다. 자동 갱신이 활성화된 구독의 경우 자동 갱신 아이콘이 표시되어 현재 기간이 종료되면 구독이 자동으로 갱신됨을 나타냅니다. 이 상태는 읽기 전용이며 계약 조건을 반영합니다. 구독을 열면 *Current consumption*, *Consumption trend*, *Subscription timeline*, *Assets* 탭의 구독 세부 정보 헤더에 이러한 아이콘이 표시되어 탐색하는 동안 만료 및 갱신 상태를 확인할 수 있습니다.</block>
+  <block id="ba93540c77434b5a45f562c939e84d30" category="paragraph">자세한 내용은<block ref="97b83a5c42cc5367f46b598d7c9e65ca" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="e13f280ffa976818e3580eb46f21ed29" category="list-text"><block ref="e13f280ffa976818e3580eb46f21ed29" category="inline-link-macro-rx"></block></block>
+  <block id="56ae4bcb822e971e4c40a45fcdc8fe7c" category="paragraph">사용 용량은 서비스에서 현재 사용 중인 용량(스토리지 TiB)을 나타냅니다. 데이터 스토리지 유형에 따라 계산 방식이 다릅니다.</block>
+  <block id="52bde02f3e1edb6d6e28dca0d312445a" category="list-text">*통합형 또는 블록 최적화 스토리지*: 사용된 용량은 주문 과정에서 선택한 용량 유형(논리적 또는 물리적)에 따라 계산됩니다. 이 계산은 성능 서비스 수준 인스턴스별로 수행됩니다.</block>
+  <block id="845131517a9dd7f41b73102338bac133" category="list-text">*논리적 용량*: 다음의 합계입니다.</block>
+  <block id="330cf8188d7a3b58592b4c81821c0f57" category="list-text">스토리지 어레이 데이터 효율성을 고려하기 전에, 복사본, 미러링된 복사본, 버전 및 클론과 같은 모든 인스턴스 및 유형의 고객 데이터를 저장하기 위한 계량화된 논리적 용량입니다.</block>
+  <block id="10bec3c494dd9bec3b24fa97cf339ed5" category="list-text">스냅샷 및 특정 클론의 메타데이터와 차등 데이터를 저장하는 데 사용되는 물리적 용량입니다.</block>
+  <block id="16e3fe3518e138a40219bf6cc72c86b0" category="list-text">씩 프로비저닝된 물리적 용량.</block>
+  <block id="0649df2b2e490a85273ef7528dbeb91a" category="list-text">*물리적 용량*: 다음의 합계입니다:</block>
+  <block id="ac24d860f9ed456787c6adde87f5cdec" category="list-text">복사본, 미러링된 복사본, 버전 및 클론과 같은 모든 인스턴스 및 유형의 고객 데이터를 저장하기 위한 스토리지 어레이 데이터 효율성 이후의 측정된 물리적 용량입니다.</block>
+  <block id="b329b0abe6bbbcab63fca174e7088d74" category="list-text">스냅샷의 메타데이터 및 차분 데이터를 저장하는 데 사용되는 물리적 용량.</block>
+  <block id="1e36ff768e1131f8fc01f855cb88fb27" category="list-text">*객체 스토리지*: 사용량은 모든 노드에 걸쳐 모든 인스턴스와 고객 데이터 유형을 저장하는 데 사용된 측정된 물리적 용량의 양으로 계산됩니다. 이 계산은 구성된 정보 라이프사이클 관리(ILM) 정책을 기반으로 합니다.</block>
+  <block id="474b185f5d41440b6fd87e927f87c541" category="list-text">*Cloud Volumes ONTAP*: 소비된 용량은 모든 Cloud Volumes ONTAP 볼륨의 측정된 프로비저닝된 논리적 용량으로 계산됩니다.</block>
+  <block id="23d4d9cd1c1ff2d6d2933321e5728e41" category="list-text">Active IQ Unified Manager(Unified Manager) 9.10 이후 버전 및 9.16P2 이전 버전</block>
+  <block id="2532e6915fa7b6217c6d00baa817a264" category="list-text">Unified Manager 버전이 9.10 이상 9.16P2 이전인지 확인하십시오. Unified Manager 설치에 대한 자세한 내용은 다음 링크를 참조하십시오.</block>
+  <block id="eb471dad784c59f27107be17f79c179b" category="paragraph"><block ref="eb471dad784c59f27107be17f79c179b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ed9a56ae580bae02af0f4033c1fc03e" category="list-text">*구독 만료까지 남은 일수*: 만료일 옆에 아이콘이 표시되어 구독 만료까지 남은 기간과 자동 갱신 여부를 알려줍니다. 이 상태는 읽기 전용이며 계약 조건을 반영합니다. 계약 세부 정보를 확인하려면 <block ref="2cf57deab11a97384e65ae3b18f8e059" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="0f90b275e273c351e98af167ee4042b0" category="paragraph">자동 갱신이 꺼져 있을 경우, 아이콘 색상은 만료일이 가까워졌음을 나타냅니다.</block>
+  <block id="e0646e6cc1521e0d850cfe435090ef1a" category="list-text">*녹색*: 만료일까지 120일 이상 남았습니다.</block>
+  <block id="2eaf25d8a1f7859cabcfaf2c76ce332d" category="list-text">*주황색*: 만료까지 91일에서 120일이 남았습니다.</block>
+  <block id="0f256230b1488e77dbb19f67f96d22e7" category="list-text">*빨간색*: 만료일까지 90일 미만이 남았습니다. 서비스 중단을 방지하려면 NetApp Keystone 지원팀에 갱신 요청을 제출하십시오.</block>
+  <block id="ec9f6b08367a17a666713d93adc74fa6" category="list-text">*회색*: 구독이 만료되었습니다.</block>
+  <block id="9a43c87c7a255c40ac13d4fd963633ae" category="paragraph">자동 갱신 기능이 활성화된 구독의 경우, 자동 갱신 아이콘이 표시되어 현재 구독 기간이 종료되면 자동으로 갱신됨을 나타냅니다.</block>
+  <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">2026년 7월 20일</block>
 </blocks>

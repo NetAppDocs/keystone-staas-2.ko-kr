@@ -66,6 +66,7 @@ image:dark-site-overall-healthy-2.png["서비스 상태"]
 
 
 
+[[export-usage-report]]
 == 사용 보고서 내보내기
 
 매월 말에 NetApp 에 월별 사용 요약 보고서를 보내야 합니다.  이 보고서는 수동으로 생성할 수 있습니다.
@@ -84,6 +85,7 @@ image:dark-site-clear-file-report-1.png["파일 보고서 지우기"]
 
 
 
+[[upgrade-ontap]]
 == ONTAP 업그레이드
 
 Keystone Collector는 TUI를 통해 ONTAP 업그레이드를 지원합니다.
@@ -100,6 +102,7 @@ image:dark-site-start-webserver-1.png["웹 서버 시작 옵션"]
 
 
 
+[[restart-keystone-collector]]
 == Keystone Collector를 다시 시작하세요
 
 TUI를 통해 Keystone Collector 서비스를 다시 시작할 수 있습니다.  TUI에서 *유지 관리 > 수집기 다시 시작* 서비스로 이동합니다.  이렇게 하면 모든 수집기 서비스가 재부팅되고, TUI 홈 화면에서 해당 상태를 모니터링할 수 있습니다.

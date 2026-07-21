@@ -38,6 +38,7 @@ image:cidr-list.png["허용된 네트워크 CIDR"]
 
 
 
+[[generate-and-collect-support-bundles]]
 == 지원 번들을 생성하고 수집합니다.
 
 Keystone Collector 관련 문제를 해결하려면 NetApp 지원팀에 문의하세요. 지원팀에서는 _.tar_ 파일을 요청할 수 있습니다.  Keystone Collector 관리 TUI 유틸리티를 통해 이 파일을 생성할 수 있습니다.
