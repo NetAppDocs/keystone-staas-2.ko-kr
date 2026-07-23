@@ -691,7 +691,6 @@
   <block id="1c8da55ed1bb51aa2c1e766474b9b2bc" category="summary">NetApp Keystone STaaS 서비스 버전 2에서 지원하는 스토리지 용량 유형에 대해 알아보세요.</block>
   <block id="e561d7dfcd6620325c8edbb7b2c1d749" category="paragraph">NetApp Keystone STaaS 서비스는 여러 유형의 스토리지 용량을 지원합니다.  이러한 다양한 용량 용어를 이해하면 Keystone 사용할 때 도움이 될 수 있습니다.</block>
   <block id="5233633b9faaa681d96ef5c43e30bea2" category="section-title">논리적 용량</block>
-  <block id="dfafb0db4cb7ff50434d65c4ee640f1a" category="paragraph">이는 고객이 Keystone 인프라에 저장한 데이터입니다.  모든 Keystone 용량은 논리적 용량을 나타냅니다.  예를 들어, 1TiB 파일이 Keystone 인프라에 저장되어 있는 경우 최소 1TiB의 용량을 구매해야 합니다.</block>
   <block id="4ac938291a74f21a35352afb886d2d88" category="section-title">약속된 용량</block>
   <block id="6695ab4bfa1eb6d5122189f790f27577" category="paragraph">구독 기간 동안 매달 청구되는 최소 논리적 용량:</block>
   <block id="c6eb79bc54b68ec5e0cc19ef77aaf577" category="list-text">계약 기간 중에 약속된 용량과 추가 서비스 수준을 추가할 수 있습니다.</block>
@@ -2791,4 +2790,5 @@
   <block id="ec9f6b08367a17a666713d93adc74fa6" category="list-text">*회색*: 구독이 만료되었습니다.</block>
   <block id="9a43c87c7a255c40ac13d4fd963633ae" category="paragraph">자동 갱신 기능이 활성화된 구독의 경우, 자동 갱신 아이콘이 표시되어 현재 구독 기간이 종료되면 자동으로 갱신됨을 나타냅니다.</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">2026년 7월 20일</block>
+  <block id="d0178ba7ef0d480555c11a8e0e008358" category="paragraph">이는 스토리지 어레이에서 제공하는 데이터 효율성이 적용되기 전에 사용자 데이터를 저장하는 데 필요한 스토리지 용량입니다.</block>
 </blocks>
