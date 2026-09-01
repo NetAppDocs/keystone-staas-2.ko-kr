@@ -4,7 +4,7 @@ permalink: dark-sites/overview.html
 keywords: keystone, dark, site, staas, security, deployment, collector, encryption, access 
 summary: 'Keystone 귀사의 비즈니스 및 보안 요구 사항을 충족하기 위해 _개인_ 배포 모드(_다크 사이트_라고도 함)를 제공합니다.' 
 ---
-= Keystone (비공개 모드)에 대해 알아보세요
+= 비공개 모드의 Keystone에 대해 알아보십시오.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
