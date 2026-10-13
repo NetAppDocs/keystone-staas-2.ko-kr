@@ -2799,4 +2799,56 @@
   <block id="d23d8e4208389cdbfa05c473cb8410ad" category="sidebar">Keystone 고객 목록 가져오기</block>
   <block id="7544c020cb246587d47ad73d1598a7e4" category="sidebar">Keystone 고객 구독 가져오기</block>
   <block id="0fb6871a30d0a0891c81661a4c790079" category="sidebar">Keystone 고객 소비 세부 정보 가져오기</block>
+  <block id="73c20ad627e7f815932cb8837d70e1e8" category="doc">Keystone 구독에 대한 상태 인사이트 생성</block>
+  <block id="ae638b3203053916360a0f228b8b54d7" category="paragraph">이번 Keystone STaaS 릴리스에는 NetApp Console의 Keystone 대시보드에 다음과 같은 업데이트가 포함되어 있습니다.</block>
+  <block id="a0c062a66e58943547f514904ae51daa" category="inline-link">Keystone 구독에 대한 상태 보고서를 생성하고 예약합니다.</block>
+  <block id="6da38bfefa907461e0fc0e4cbf32c236" category="paragraph">NetApp Console의 *Storage &gt; Keystone &gt; Monitoring &gt; Health reports*에서 온디맨드 PowerPoint 보고서를 다운로드하거나 일회성, 주별, 월별 또는 분기별 전송을 예약할 수 있습니다. 각 보고서는 선택한 구독에 대한 구독 사용량, 운영 상태, 위험 및 취약성을 결합하여 우려 사항을 파악하고 수신자와 실행 가능한 인사이트를 공유하는 데 도움이 됩니다. 자세한 내용은<block ref="d2f756b41ddff582298cd4e997cfe66a" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="d9488e4902ac8163ee538f8e5bfe01c8" category="inline-link-macro">상태 보고서 생성 및 예약</block>
+  <block id="ea034e7c3ada4fd5285144ae8a2f1ec3" category="list-text"><block ref="ea034e7c3ada4fd5285144ae8a2f1ec3" category="inline-link-macro-rx"></block></block>
+  <block id="6cceac6cd41854fc33cca3191e462847" category="list-text">*상태 보고서 생성*: 구독 사용량, 운영 상태, 위험 및 취약점을 검토하기 위한 상태 평가 보고서를 필요에 따라 또는 예약하여 생성할 수 있습니다.</block>
+  <block id="bcd6194438a86161f86a66b169dcae08" category="summary">NetApp Console에서 Keystone 상태 평가 보고서를 사용하여 구독 세부 정보를 확인하고, 상태를 평가하고, 사용 추세를 분석하고, 하나 이상의 구독 전반에 걸쳐 위험 및 취약점을 식별할 수 있습니다. 필요에 따라 보고서를 생성하거나 예약하여 이해관계자와 정확한 운영 및 규정 준수 정보를 공유할 수 있습니다.</block>
+  <block id="43c438a5f171a0070565c9a3ce412632" category="paragraph">NetApp Console의 Keystone 대시보드에서 하나 이상의 Keystone 구독에 대한 상태 보고서를 생성하거나 예약할 수 있습니다. 이러한 보고서는 구독 사용량, 운영 상태, 위험 및 취약점에 대한 통합된 보기를 제공하며, 지정된 수신자와 공유할 수 있습니다. 이 기능은 Digital Advisor에서 사용할 수 없습니다.</block>
+  <block id="ed90fab979b1c2338f266823f485f606" category="paragraph">상태 보고서를 통해 선택한 구독의 사용량, 운영 상태 및 식별된 위험 요소를 한눈에 파악할 수 있습니다. *새 보고서* 페이지에서 *보고서 구성* 패널을 사용하여 보고서의 범위와 옵션을 정의하십시오. 보고서를 생성하거나 예약하기 전에 미리 보기 영역을 사용하여 슬라이드 순서와 레이아웃을 검토하십시오. 미리 보기에는 보고서 구조만 표시되며 실제 구독 데이터는 표시되지 않습니다.</block>
+  <block id="805e040836078c98207014459ce00fe4" category="paragraph">다음 단계를 따라 보고서를 생성하여 즉시 다운로드하거나, 일회성 또는 정기 보고서를 나중에 받을 수 있도록 예약하세요:</block>
+  <block id="8b033bd96006a357396469d2d12002ff" category="list-text">콘솔 왼쪽 탐색 메뉴에서 *스토리지 &gt; Keystone &gt; 모니터링 &gt; 보고서*를 선택합니다.</block>
+  <block id="bc32ee3dafd98cfab55839d1a1ad173d" category="list-text">*새 보고서*를 선택합니다.</block>
+  <block id="db73c44d8bba03212ad21e123d47d5dd" category="list-text">*보고서 구성 패널*에서 *보고서 이름* 필드에 이름을 입력합니다.</block>
+  <block id="d99d4ce092a8b9f4aff4e17d7603bfe2" category="list-text">*시간 범위* 드롭다운 메뉴에서 시간 범위를 선택하세요.</block>
+  <block id="6a03b07232e58a0d22244bd78e9ee309" category="paragraph">*지난 60일* 등 사전 설정된 기간을 선택하거나 *사용자 지정*을 선택하여 직접 날짜를 입력하십시오. 선택한 기간은 *소비 추세* 섹션 및 기타 시간 기반 섹션에 표시되는 기간별 데이터를 결정합니다. *사용자 지정*을 선택하면 보고서를 예약할 수 없습니다.</block>
+  <block id="b9b414179e1f9c10b9cf39dc76d45554" category="inline-image-macro">사용자 지정 날짜 범위를 선택할 때 예약이 비활성화됨을 보여주는 상태 보고서 구성</block>
+  <block id="e84931d18314142b08f9bd586d2d273d" category="paragraph"><block ref="e84931d18314142b08f9bd586d2d273d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="55c22e502f5cfc9d2f8d74e22b0c8e98" category="list-text">*구독* 드롭다운 메뉴에서 하나 이상의 구독을 선택하세요.</block>
+  <block id="de710d1f96079b8408fcc93a084d21ca" category="admonition">NetApp 파트너는 관리형 Keystone 고객 계정 중 하나 이상에서 구독을 선택할 수 있습니다.</block>
+  <block id="2494369c3bace34f8d03d3b0f6b35714" category="list-text">*보고서 섹션*에서 포함할 섹션을 선택합니다.</block>
+  <block id="a23a396c1ad877d36ea36ff279bab746" category="paragraph">선택한 각 섹션은 미리보기 영역에 표시되며 생성된 보고서에 포함됩니다. 예를 들어 구독 요약, 현재 용량 사용량, 소비 추세, 물리적 용량, 시스템 상태, 위험 및 취약점을 포함할 수 있습니다. *소비 추세*의 경우 기간별 소비량 차트를 포함할 수 있으며, 선택적으로 미래 소비량 예측도 추가할 수 있습니다.</block>
+  <block id="73edafd21beaaf25a3c4b463e7301486" category="list-text">프레젠테이션 테마를 선택하세요.</block>
+  <block id="e79541eac81a9b39cbfa8f8f8515ac14" category="list-text">미리보기 영역에 표시된 섹션을 검토하여 선택 사항과 일치하는지 확인하십시오.</block>
+  <block id="c33cd459680d55a97ffee84381838d90" category="list-text">보고서를 작성하는 방법을 선택하세요.</block>
+  <block id="7fb99d2c520fc85b9123d1d2daf9e796" category="list-text">*보고서 생성*</block>
+  <block id="d3cd467451f595793563586a695d9c1c" category="paragraph">보고서를 즉시 다운로드하려면 *보고서 생성*을 선택하십시오.</block>
+  <block id="8ab8d739fddb8825d819131cf0c36e7a" category="paragraph">보고서가 생성을 위해 제출되며, *보고서* 탭으로 돌아갑니다. 보고서가 *실행 중* 상태로 표시됩니다.</block>
+  <block id="9dabac9e7f2d642811e0cf62d3e18002" category="paragraph">상태가 *생성됨*으로 변경되면 보고서 행 끝에 있는 점 세 개 아이콘을 선택한 다음 *다운로드*를 선택합니다.</block>
+  <block id="00555bd07173f7d9c242e377dc1e4afe" category="list-text">*보고서 예약*</block>
+  <block id="6cebac50d1a7bff739e4a52a8cedaa57" category="paragraph">일회성 또는 정기 보고서를 생성하려면 *예약*을 선택하고 다음 단계를 완료하십시오:</block>
+  <block id="8b7ea71302f67c6f0966ac6f0f8efc8f" category="list-text">빈도를 선택하십시오: *1회*, *주간*, *월간* 또는 *분기별*.</block>
+  <block id="83fb650baf1f2bfaabf37d0b01f8b198" category="list-text">*시작 날짜*를 선택하십시오.</block>
+  <block id="86b7782bce140b306301378eb75d320f" category="inline-image-macro">주간 빈도가 선택되어 있고, 시작일 및 종료일 필드가 비어 있으며, 수신자 필드가 있고, PPT 형식이 선택된 일정 보고서 대화 상자</block>
+  <block id="65de2e1080fef3c60cec4997218e5994" category="paragraph"><block ref="65de2e1080fef3c60cec4997218e5994" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a65d24447c848fed1b1282d04274bcc" category="paragraph">시작일은 보고서가 처음 실행되는 시점을 결정합니다. 반복 실행 빈도를 선택한 경우, 보고서는 선택한 주간, 월간 또는 분기별 일정에 따라 다시 실행됩니다.</block>
+  <block id="a4f1fd8e2247116044a0a9ef4e9401ae" category="list-text">선택적으로 *종료일*을 지정할 수 있습니다.</block>
+  <block id="a0e32eed5feb418713b52f7739a1f7de" category="paragraph">종료일을 선택하지 않으면, 변경할 때까지 일정이 계속 진행됩니다.</block>
+  <block id="45fdcaf864d7e16c4c277f710fe9214c" category="list-text">*보고서 예약*을 선택합니다.</block>
+  <block id="dda29f572e1f01fb24ef9fbb9567dcae" category="paragraph">일정이 생성되면 *보고서* 탭에 실행 유형이 *예약 실행*인 보고서가 표시됩니다. *마지막 실행*, *다음 실행*, *상태* 열을 사용하여 각 실행을 추적하십시오.</block>
+  <block id="04091b33f99194409a3e638fb720ccd7" category="paragraph">주간, 월간 또는 분기별 일정을 편집하려면 보고서 행 끝에 있는 줄임표 아이콘을 선택한 다음 *일정 편집*을 선택하십시오. 상태가 *예약됨*이든 *생성됨*이든 이 작업을 수행할 수 있습니다. 보고서가 생성된 후에는 *일회성* 일정을 편집할 수 없습니다.</block>
+  <block id="3d8502ba652cf0b8dda71ea1d23775d9" category="paragraph">상태가 *생성됨*으로 변경되면 보고서 옆에 있는 점 세 개 아이콘을 선택하고 *다운로드*를 선택하십시오.</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">결과</block>
+  <block id="cf3e1ddb292882536f57277035f7ccdf" category="paragraph">생성된 보고서는 PowerPoint 프레젠테이션으로 다운로드됩니다. 점 세 개 메뉴에서 *다시 생성*을 선택하여 동일한 구성으로 새 보고서를 생성할 수 있습니다.</block>
+  <block id="74a2518355991b0460124194339aa262" category="inline-link-macro">현재 사용량 보기</block>
+  <block id="05a9cc32ea53864df9d04304930c39b2" category="list-text"><block ref="05a9cc32ea53864df9d04304930c39b2" category="inline-link-macro-rx"></block></block>
+  <block id="ff0355703598e77f5d53ad567098e540" category="inline-link-macro">구독과 관련된 자산을 확인하십시오</block>
+  <block id="122bb916bdbca193871c1c238a8ad494" category="list-text"><block ref="122bb916bdbca193871c1c238a8ad494" category="inline-link-macro-rx"></block></block>
+  <block id="e9585bf2660bfde75b6f0a2b54b179ac" category="section-title">NetApp Console에서 상태 보고서 생성</block>
+  <block id="d2fc234fa58b5424fb66e69d6f37ea37" category="paragraph">NetApp Console을 사용하여 하나 이상의 구독에 대한 상태 보고서를 생성하거나 예약할 수 있습니다. 이러한 PowerPoint 보고서는 구독 사용량, 운영 상태, 위험 및 취약점을 통합적으로 보여줍니다. Digital Advisor는 상태 평가 보고서 생성 또는 예약을 지원하지 않습니다.</block>
+  <block id="0557e64d44b59ed5a4145771c544da91" category="paragraph">자세한 내용은 <block ref="1f95c525270767ec0581ce04383996f5" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="e019cb225a4644922cdd06575b099710" category="section-title">2026년 10월 12일</block>
 </blocks>
